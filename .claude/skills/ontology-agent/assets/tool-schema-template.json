@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ontology-Agent Tool Schemas",
+  "description": "JSON Schema mirrors for common IDE / agent tools. Extend per project. Used by Layer 1 (type check) before Layer 2 (shape check) in scripts/validate_tool_call.py. Copy this file to <project-root>/.ontology-agent/schema/tools.json and adjust per project (bootstrap.py, owned by the ontology-core sibling piece, does this automatically). The x-shape-target and x-property-map keys are optional data hooks read by the generic shape evaluator: x-shape-target names which shape (by targetClass, from schema/shapes.json) the tool's arguments should be validated against; x-property-map renames a JSON argument key to the ontology property path it represents when the names differ. Neither key changes Layer 1 semantics — plain JSON Schema validators can ignore them. Default-deny: any tool_name NOT listed under 'properties' below is rejected by validate_tool_call.py's Layer 1 (code 'unregistered_tool'), never silently allowed through. The only sanctioned opt-out is marking a tool's entry 'x-unvalidated: true' with a required, non-empty 'x-unvalidated-reason' string -- see 'x-unvalidated-escape-hatch-example' below for the exact shape (documentation only; not itself a live tool entry, since type_check only reads 'properties'). Every example tool actually registered below is fully schema'd; none opts out by default.",
+  "type": "object",
+  "properties": {
+    "write_file": {
+      "type": "object",
+      "required": ["path", "content"],
+      "additionalProperties": false,
+      "x-shape-target": "File",
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Relative or absolute path inside the workspace"
+        },
+        "content": {
+          "type": "string",
+          "description": "Full file contents to write"
+        }
+      }
+    },
+    "edit_file": {
+      "type": "object",
+      "required": ["path", "old_string", "new_string"],
+      "additionalProperties": false,
+      "x-shape-target": "File",
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "old_string": { "type": "string" },
+        "new_string": { "type": "string" },
+        "replace_all": { "type": "boolean", "default": false }
+      }
+    },
+    "run_terminal": {
+      "type": "object",
+      "required": ["command"],
+      "additionalProperties": false,
+      "properties": {
+        "command": { "type": "string", "minLength": 1 },
+        "cwd": { "type": "string" },
+        "timeout_seconds": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 600,
+          "default": 30
+        }
+      }
+    },
+    "create_task": {
+      "type": "object",
+      "required": ["name", "status"],
+      "additionalProperties": false,
+      "x-shape-target": "Task",
+      "x-property-map": { "assignee": "ownedBy" },
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "status": {
+          "type": "string",
+          "enum": ["open", "in_progress", "blocked", "done", "cancelled"]
+        },
+        "priority": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "description": { "type": "string" },
+        "assignee": { "type": "string" }
+      }
+    },
+    "query_graph": {
+      "type": "object",
+      "required": ["command", "entity_id"],
+      "additionalProperties": false,
+      "description": "Mirrors scripts/query_graph.py's actual CLI: fixed subcommands over an entity_id/task_id and --depth, not SPARQL -- there is no SPARQL engine anywhere in this skill.",
+      "properties": {
+        "command": {
+          "type": "string",
+          "enum": ["contains", "depends-on", "subgraph", "blocked-by", "blocking"],
+          "description": "Which query_graph.py subcommand to run."
+        },
+        "entity_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The entity_id (contains/depends-on/subgraph) or task_id (blocked-by/blocking) to query."
+        },
+        "depth": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Hop limit. depends-on: unbounded if omitted. subgraph: defaults to 2. Ignored by contains/blocked-by/blocking."
+        },
+        "json": {
+          "type": "boolean",
+          "default": false,
+          "description": "Print raw JSON instead of a formatted summary (matches the --json flag)."
+        },
+        "graph_path": {
+          "type": "string",
+          "description": "Optional override path to graph.jsonl (matches --graph). Default: search upward from cwd for .ontology-agent/graph.jsonl."
+        }
+      }
+    }
+  },
+  "x-unvalidated-escape-hatch-example": {
+    "$comment": "Documentation only -- not a live tool entry (validate_tool_call.py's type_check only reads the 'properties' object above). Copy a shape like this INTO 'properties' if you have a genuinely pure read-only/exploratory tool that a project owner has consciously decided doesn't need type/shape gating. Both keys are required for the escape hatch to take effect: x-unvalidated must be exactly `true`, and x-unvalidated-reason must be a non-empty string -- a missing or empty x-unvalidated-reason fails closed (the tool is rejected, same as an unregistered one), it does not silently grant the opt-out.",
+    "grep_search": {
+      "type": "object",
+      "x-unvalidated": true,
+      "x-unvalidated-reason": "Pure read-only text search across the workspace; no state mutation for the gate to check."
+    }
+  }
+}

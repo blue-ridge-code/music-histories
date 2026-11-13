@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "integration_version": "1.0.0",
+  "review_protocol": {
+    "major": 1,
+    "minor": 0
+  },
+  "mode_default": "disabled",
+  "privacy": "local_only",
+  "repository": {
+    "canonical_repository": "example/sample",
+    "github_repository_id": 1
+  },
+  "queue": {
+    "root": "review-queue",
+    "reviewer_registry": "review-queue/reviewers.json",
+    "default_reviewer_id": "owner"
+  },
+  "adapters": {
+    "read": "review-queue-v1-read-only",
+    "response_write": "disabled"
+  },
+  "legacy_listener": {
+    "task_name": "sample-project-human-review-queue",
+    "retirement": "separate_owner_gate"
+  },
+  "provenance": {
+    "contract_owner": "blue-ridge-code/commute-dispatch",
+    "template_owner": "blue-ridge-code/vscode-template",
+    "last_evaluated": "2026-08-27"
+  }
+}

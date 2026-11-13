@@ -1,0 +1,39 @@
+# --- Secrets: never commit ---
+.env
+.env.*
+!.env.example
+client_secret*.json
+*credentials*.json
+*.pem
+*.key
+
+# --- Local per-machine agent settings ---
+.claude/settings.local.json
+**/*.local.json
+
+# --- Intake raw zones (private by default; logs/indexes stay committed) ---
+# Agents: see docs/agents/intake.md. A project may choose to commit sources/
+# deliberately at kickoff — remove the line there, not here.
+inbox/raw/
+inbox/archive/
+sources/raw/
+
+# --- Agent working state ---
+.token-saver/
+handoffs/.tmp/
+
+# --- ontology-agent skill: per-project runtime instance, created on first bootstrap ---
+.ontology-agent/
+
+# --- OS / editor junk ---
+Thumbs.db
+desktop.ini
+Desktop.ini
+.DS_Store
+
+# --- Common tool caches (harmless for any project type) ---
+__pycache__/
+.venv/
+node_modules/
+/dist/
+/build/

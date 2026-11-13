@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "reviewers": [
+    {
+      "id": "owner",
+      "display_name": "Project Owner",
+      "active": true,
+      "roles": ["owner", "standards", "subject-matter", "rights", "release"],
+      "parent_id": null
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+name: Skill and doc integrity
+
+on:
+  push:
+    paths:
+      - '.agents/skills/**'
+      - '.claude/skills/**'
+      - 'docs/**'
+      - 'AGENTS.md'
+      - 'scripts/sync-skills.ps1'
+      - 'scripts/sync-skills.sh'
+      - 'scripts/check-evidence-links.ps1'
+      - 'scripts/tests/**'
+  pull_request:
+    paths:
+      - '.agents/skills/**'
+      - '.claude/skills/**'
+      - 'docs/**'
+      - 'AGENTS.md'
+      - 'scripts/sync-skills.ps1'
+      - 'scripts/sync-skills.sh'
+      - 'scripts/check-evidence-links.ps1'
+      - 'scripts/tests/**'
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify .claude/skills mirror matches canonical .agents/skills
+        shell: pwsh
+        run: pwsh scripts/sync-skills.ps1 -Verify
+
+      - name: Verify decision evidence links resolve
+        shell: pwsh
+        run: pwsh scripts/check-evidence-links.ps1
+
+      - name: Run kickoff/governance lifecycle verification scenarios (A-E)
+        run: python scripts/tests/run_all.py

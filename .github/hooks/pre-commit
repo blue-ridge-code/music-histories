@@ -1,0 +1,13 @@
+#!/bin/bash
+# Pre-commit hook template — verifies the .claude/skills mirror matches canonical .agents/skills.
+#
+# Enable it repo-locally (no global changes):
+#   git config core.hooksPath .github/hooks
+# or copy this file to .git/hooks/pre-commit and make it executable.
+#
+# On drift the hook aborts the commit; fix with: pwsh scripts/sync-skills.ps1
+set -euo pipefail
+pwsh scripts/sync-skills.ps1 -Verify || {
+    echo "Skill mirror drift detected — run 'pwsh scripts/sync-skills.ps1' and re-stage."
+    exit 1
+}

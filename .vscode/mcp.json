@@ -1,0 +1,5 @@
+// Workspace MCP servers. Registry and per-host guide: docs/agents/services.md. Secrets via env vars only.
+{
+  "servers": {},
+  "inputs": []
+}

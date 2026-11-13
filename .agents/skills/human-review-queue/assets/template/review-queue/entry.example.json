@@ -1,0 +1,66 @@
+{
+  "id": "RD-001",
+  "kind": "Review Decision",
+  "title": "Disposition the exact sample version",
+  "project": "Sample Project",
+  "issue": "#1",
+  "ticket": "https://github.com/example/sample-project/issues/1",
+  "touchpoint": "B",
+  "due": "Blocks the next revision",
+  "version": "sample-v1 · SHA-256 replace-me",
+  "criteria": [
+    "The reviewed item matches the named version",
+    "The item meets the stated acceptance condition"
+  ],
+  "steps": [
+    "Open the exact reviewed item.",
+    "Compare the item with both named criteria."
+  ],
+  "media": {
+    "type": "link",
+    "href": "https://github.com/example/sample-project/issues/1",
+    "label": "Exact reviewed item"
+  },
+  "question": "How should this exact version proceed?",
+  "options": [
+    {
+      "value": "approve",
+      "label": "Approve this version",
+      "effect": "Allow the declared follow-up.",
+      "recommended": true,
+      "route": "complete",
+      "dispatch": true
+    },
+    {
+      "value": "revise",
+      "label": "Require changes",
+      "effect": "Keep the next step blocked and prepare a new version.",
+      "route": "stop",
+      "dispatch": true
+    }
+  ],
+  "recommendation": "Approve only if the exact item meets both named criteria.",
+  "record": "Issue #1 and the append-only review decision log",
+  "decision_type": "exact_version_review",
+  "human_owned_category": [],
+  "reversible": true,
+  "routing": {
+    "mode": "stages",
+    "stages": [
+      {
+        "id": "owner-review",
+        "reviewer_ids": ["owner"],
+        "approvals_required": 1
+      }
+    ]
+  },
+  "agent_action": {
+    "enabled": true,
+    "group": "sample-review",
+    "job": "Apply the recorded exact-version disposition.",
+    "tool": "configured follow-up adapter",
+    "categories": ["review-decision"],
+    "output": "One inspectable follow-up constrained to the recorded choice.",
+    "boundary": "Do not change the reviewed version or broaden the recorded authority."
+  }
+}

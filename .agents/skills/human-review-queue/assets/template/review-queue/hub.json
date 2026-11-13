@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "sample-project",
+      "name": "Sample Project",
+      "root": ".",
+      "enabled": true
+    }
+  ]
+}

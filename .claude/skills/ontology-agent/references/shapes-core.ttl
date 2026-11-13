@@ -1,0 +1,169 @@
+@prefix : <http://example.org/ontology-agent#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# SHACL node shapes for ontology-core.ttl.
+#
+# Rule enforced by hand here (see growing-the-ontology.md): every
+# sh:datatype below must equal that property's rdfs:range in
+# ontology-core.ttl, and every sh:class below must equal that
+# property's rdfs:range class exactly — never a subclass or
+# superclass of it. If a property's range is intentionally generic
+# (e.g. :contains ranges over :Entity), no shape here narrows it;
+# a narrower per-class rule gets its own precisely-typed property
+# instead (see :declares). Only classes with a real constraint to
+# enforce get a shape — Module, Project, Person, and Symbol inherit
+# EntityShape and add nothing beyond it.
+#################################################################
+
+:EntityShape a sh:NodeShape ;
+    sh:targetClass :Entity ;
+    sh:property [
+        sh:path :name ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] .
+    # No global :status constraint here. An earlier draft (see
+    # inbox raw source) put one sh:in enum on the base Entity shape
+    # and a different, barely-overlapping sh:in enum on TaskShape;
+    # because SHACL target-class matching includes subclasses, a
+    # Task instance had to satisfy BOTH enums at once, which left
+    # only "open" as a legal value for any Task. Status vocabularies
+    # are class-specific by nature (see :status's rdfs:comment), so
+    # each shape below that needs one declares its own — no shared
+    # base enum for subclasses to collide with.
+
+:TaskShape a sh:NodeShape ;
+    sh:targetClass :Task ;
+    sh:property [
+        sh:path :status ;
+        sh:datatype xsd:string ;
+        sh:in ( "open" "in_progress" "blocked" "done" "cancelled" ) ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :priority ;
+        sh:datatype xsd:integer ;
+        sh:minInclusive 1 ;
+        sh:maxInclusive 5 ;
+    ] ;
+    sh:property [
+        sh:path :ownedBy ;
+        sh:class :Person ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :blocks ;
+        sh:class :Task ;
+    ] .
+
+:DecisionShape a sh:NodeShape ;
+    sh:targetClass :Decision ;
+    sh:property [
+        sh:path :status ;
+        sh:datatype xsd:string ;
+        sh:in ( "proposed" "accepted" "superseded" "reversed" ) ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :constrains ;
+        sh:class :Entity ;
+    ] ;
+    sh:property [
+        sh:path :dependsOn ;
+        sh:class :Entity ;
+    ] ;
+    sh:property [
+        sh:path :changesTerm ;
+        sh:datatype xsd:string ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:or (
+        [ sh:path :dependsOn ; sh:minCount 1 ]
+        [ sh:path :constrains ; sh:minCount 1 ]
+    ) ;
+    sh:message "A Decision needs at least one dependsOn or constrains edge to something real — see the Decision competency question in ontology-core.ttl." .
+
+:ToolCallShape a sh:NodeShape ;
+    sh:targetClass :ToolCall ;
+    sh:property [
+        sh:path :toolName ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :argumentsJson ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :outcome ;
+        sh:datatype xsd:string ;
+        sh:in ( "proposed" "validated" "executed" "failed" "repaired" ) ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :validatedBy ;
+        sh:class :Constraint ;
+    ] .
+
+:FileShape a sh:NodeShape ;
+    sh:targetClass :File ;
+    sh:property [
+        sh:path :path ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :declares ;
+        sh:class :Symbol ;
+    ] .
+    # Fixes a drift bug carried in the raw draft's shapes-example.ttl:
+    # that file put `sh:path :contains ; sh:class :Symbol` on
+    # FileShape, but :contains's rdfs:range in ontology-core.ttl is
+    # the generic :Entity — so the shape silently enforced a
+    # narrower rule (File contains only Symbols) than the ontology
+    # actually declared, and nothing stopped a Module from also
+    # using :contains to point at a non-Symbol and technically
+    # complying. Renamed the File-to-Symbol edge to :declares with
+    # rdfs:range :Symbol in the ontology, so this shape's sh:class
+    # now matches that property's range exactly, and :contains stays
+    # reserved for Project/Module/File structural containment.
+
+:DependencyShape a sh:NodeShape ;
+    sh:targetClass :Dependency ;
+    sh:property [
+        sh:path :name ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path :dependsOn ;
+        sh:class :Entity ;
+        sh:minCount 1 ;
+    ] .
+    # minCount 1 here (stricter than DecisionShape's dependsOn,
+    # which is optional) because :Dependency's competency question
+    # is specifically "what does this depend on" — a Dependency
+    # node with no outgoing :dependsOn edge names nothing.
+
+:ConstraintShape a sh:NodeShape ;
+    sh:targetClass :Constraint ;
+    sh:property [
+        sh:path :description ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] .
+    # A Constraint's competency question is "what rule must be
+    # satisfied" — without :description text, :validatedBy points
+    # at a Constraint node that enforces nothing an agent or human
+    # could act on.

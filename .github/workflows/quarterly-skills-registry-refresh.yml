@@ -1,0 +1,26 @@
+name: Quarterly skills registry refresh
+
+on:
+  schedule:
+    - cron: "0 16 1 1,4,7,10 *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  open-reminder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open reminder if none is active
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          count="$(gh issue list --state open --search 'Refresh skills registry in:title' --json number --jq 'length')"
+          if [ "$count" -eq 0 ]; then
+            gh issue create \
+              --title "Refresh skills registry" \
+              --body $'Follow the **Quarterly review checklist** in `docs/agents/skills.md`.\n\nClose this issue with links to the reviewed sources and changed files.'
+          fi

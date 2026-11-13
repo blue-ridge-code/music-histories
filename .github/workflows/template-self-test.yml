@@ -1,0 +1,22 @@
+name: Template self-test
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run ontology validation self-test
+        run: python .agents/skills/ontology-agent/scripts/selftest_validate.py
+
+      - name: Verify skill mirror
+        shell: pwsh
+        run: pwsh scripts/sync-skills.ps1 -Verify

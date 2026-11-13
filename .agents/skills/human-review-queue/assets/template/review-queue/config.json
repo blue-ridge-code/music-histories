@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "project": {
+    "id": "sample-project",
+    "name": "Sample Project",
+    "repository": "example/sample-project"
+  },
+  "server": {
+    "port": 4173,
+    "task_name": "sample-project-human-review-queue",
+    "identity_mode": "single_local",
+    "default_reviewer": "owner",
+    "trusted_identity_header": "X-Review-Queue-Reviewer"
+  },
+  "recording": {
+    "log_dir": "docs/agents/review-decisions/log",
+    "profile_path": "docs/agents/review-decisions/profile.md"
+  },
+  "dispatch": {
+    "adapter": "none",
+    "repository": "example/sample-project",
+    "label": "human-review:queued",
+    "fixed_boundary": "Do not push, merge, publish, release, send, spend, use credentials, or perform destructive work without separate authority."
+  }
+}

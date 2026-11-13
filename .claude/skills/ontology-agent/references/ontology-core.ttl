@@ -1,0 +1,186 @@
+@prefix : <http://example.org/ontology-agent#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/ontology-agent> a owl:Ontology ;
+    rdfs:label "Ontology-Agent Core" ;
+    rdfs:comment "Lean RDFS/OWL seed ontology for a generic software project graph. Every class and property below exists to answer one concrete competency question, stated in its rdfs:comment. Nothing is here 'for completeness' — see growing-the-ontology.md before adding to this file." .
+
+#################################################################
+# Classes — root + exactly one layer of direct subclasses.
+# Discipline modeled on CIDOC-CRM (ISO 21127): shallow hierarchy,
+# every class carries a scope note that says what it is FOR and
+# what it is not, phrased as the competency question it answers.
+#################################################################
+
+:Entity a owl:Class ;
+    rdfs:label "Entity" ;
+    rdfs:comment "Scope note: the common supertype for anything in the project graph that needs stable identity across sessions. Answers: can an agent refer to X again later (in a different session, possibly a different model) and land on the same node? Every direct subclass inherits :name, :description, :createdAt so an agent never special-cases 'does this kind of node have a name.' :Entity has no direct instances — only its subclasses do." .
+
+:Project a owl:Class ;
+    rdfs:subClassOf :Entity ;
+    rdfs:label "Project" ;
+    rdfs:comment "Answers: what is the top-level unit this graph describes, i.e. where does the :contains tree bottom out (upward) when an agent asks 'what codebase is this'? A Project has no containing Entity above it." .
+
+:Module a owl:Class ;
+    rdfs:subClassOf :Entity ;
+    rdfs:label "Module" ;
+    rdfs:comment "Answers: what groups a set of Files into one importable/deployable unit, so 'what depends on the auth module' resolves to a single node instead of enumerating every file inside it?" .
+
+:File a owl:Class ;
+    rdfs:subClassOf :Entity ;
+    rdfs:label "File" ;
+    rdfs:comment "Answers: which single file on disk holds this content, so an agent can open the exact path instead of re-searching the tree? Carries :path; declares zero or more :Symbol via :declares." .
+
+:Symbol a owl:Class ;
+    rdfs:subClassOf :Entity ;
+    rdfs:label "Symbol" ;
+    rdfs:comment "Function, class, type, or constant. Answers: which specific code element is being discussed, when a Task, Decision, or ToolCall needs to point at something more precise than a whole File (e.g. 'this Decision only affects the retry() function')?" .
+
+:Task a owl:Class ;
+    rdfs:subClassOf :Entity ;
+    rdfs:label "Task" ;
+    rdfs:comment "Answers: what work is outstanding or in progress, who owns it, and what blocks it from starting? A Task without a :status an agent can filter on is just an untracked wish." .
+
+:Decision a owl:Class ;
+    rdfs:subClassOf :Entity ;
+    rdfs:label "Decision" ;
+    rdfs:comment "Answers: why was X chosen, and what does it constrain? A Decision without at least one :dependsOn or :constrains edge to something real is noise — free-floating rationale no future query can reach. May also record why the ontology itself changed (see :changesTerm) rather than adding a separate audit class for that." .
+
+:Person a owl:Class ;
+    rdfs:subClassOf :Entity ;
+    rdfs:label "Person" ;
+    rdfs:comment "Answers: who is accountable for this Entity if it breaks, needs review, or raises a question the graph can't answer alone?" .
+
+:Dependency a owl:Class ;
+    rdfs:subClassOf :Entity ;
+    rdfs:label "Dependency" ;
+    rdfs:comment "Answers: what external package or service does this project rely on, so 'what breaks if we upgrade X' is answerable without grepping manifests? Points at what it depends on via :dependsOn; a Dependency with no outgoing :dependsOn edge names nothing." .
+
+:ToolCall a owl:Class ;
+    rdfs:subClassOf :Entity ;
+    rdfs:label "ToolCall" ;
+    rdfs:comment "Answers: what did an agent propose or run against this project, with what arguments, and did it succeed? The audit unit the validation gate checks before and after execution." .
+
+:Constraint a owl:Class ;
+    rdfs:subClassOf :Entity ;
+    rdfs:label "Constraint" ;
+    rdfs:comment "Answers: what rule must a ToolCall or Decision satisfy to be considered valid? Referenced via :validatedBy so a rejection can cite the specific rule that failed instead of 'invalid.' A Constraint with no :description enforces nothing an agent or human could act on." .
+
+#################################################################
+# Object Properties
+#################################################################
+
+:contains a owl:ObjectProperty ;
+    rdfs:domain :Entity ;
+    rdfs:range :Entity ;
+    rdfs:label "contains" ;
+    rdfs:comment "Answers: what does X structurally hold, so an agent can enumerate a Project's Modules or a Module's Files without walking the filesystem? Scoped to the Project/Module/File containment hierarchy — File-to-Symbol containment uses the more specific :declares instead, so a shape can require the object be a :Symbol without contradicting this property's broader range." .
+
+:declares a owl:ObjectProperty ;
+    rdfs:domain :File ;
+    rdfs:range :Symbol ;
+    rdfs:label "declares" ;
+    rdfs:comment "Answers: which Symbols does this File define, so 'where is function foo defined' resolves to a File node without a repo-wide grep? Kept separate from :contains (rather than overloading it) precisely so its range can be pinned to :Symbol with zero drift against the FileShape SHACL constraint." .
+
+:dependsOn a owl:ObjectProperty ;
+    rdfs:domain :Entity ;
+    rdfs:range :Entity ;
+    rdfs:label "dependsOn" ;
+    rdfs:comment "Answers: what does X require to function, so 'what breaks if we remove/upgrade Y' can walk the edge instead of being re-derived from memory each session?" .
+
+:implements a owl:ObjectProperty ;
+    rdfs:domain :Symbol ;
+    rdfs:range :Symbol ;
+    rdfs:label "implements" ;
+    rdfs:comment "Answers: which concrete Symbol fulfills which abstract Symbol's contract (e.g. a class implementing an interface), so a change to the abstract Symbol can find every implementer instead of relying on naming conventions?" .
+
+:ownedBy a owl:ObjectProperty ;
+    rdfs:domain :Entity ;
+    rdfs:range :Person ;
+    rdfs:label "ownedBy" ;
+    rdfs:comment "Answers: who is accountable for this Entity — see :Person's competency question. Domain is the full :Entity, not just :Task, because Files, Decisions, and Constraints all need an accountable owner too." .
+
+:validatedBy a owl:ObjectProperty ;
+    rdfs:domain :ToolCall ;
+    rdfs:range :Constraint ;
+    rdfs:label "validatedBy" ;
+    rdfs:comment "Answers: which Constraint(s) was this ToolCall checked against before execution? The edge the validation gate writes so a later audit can see exactly what was enforced, not just that 'validation happened.'" .
+
+:blocks a owl:ObjectProperty ;
+    rdfs:domain :Task ;
+    rdfs:range :Task ;
+    rdfs:label "blocks" ;
+    rdfs:comment "Answers: which Task must complete before this one can start, so an agent picking 'what's next' doesn't propose work that's actually stuck?" .
+
+:constrains a owl:ObjectProperty ;
+    rdfs:domain :Decision ;
+    rdfs:range :Entity ;
+    rdfs:label "constrains" ;
+    rdfs:comment "Answers: what does this Decision limit or govern going forward (a Module, a Constraint, a Task), as distinct from :dependsOn (what the Decision itself relied on to be made)? Without this edge a Decision is prose an agent can read but never enforce." .
+
+#################################################################
+# Datatype Properties
+#################################################################
+
+:name a owl:DatatypeProperty ;
+    rdfs:domain :Entity ;
+    rdfs:range xsd:string ;
+    rdfs:label "name" ;
+    rdfs:comment "Answers: what is this Entity called, for display and for matching a human's or agent's mention of it to the right node?" .
+
+:status a owl:DatatypeProperty ;
+    rdfs:domain :Entity ;
+    rdfs:range xsd:string ;
+    rdfs:label "status" ;
+    rdfs:comment "Answers: what lifecycle state is X in, so an agent can filter for what's actionable? The permitted values are class-specific (a Task's states are not a Decision's), so shapes-core.ttl constrains :status per targetClass rather than once on :Entity — see growing-the-ontology.md for why a single shared enum broke this in an earlier draft." .
+
+:path a owl:DatatypeProperty ;
+    rdfs:domain :File ;
+    rdfs:range xsd:string ;
+    rdfs:label "path" ;
+    rdfs:comment "Answers: which exact filesystem path does this File node represent, so an agent can open/read/write it directly instead of re-resolving a name to a path?" .
+
+:description a owl:DatatypeProperty ;
+    rdfs:domain :Entity ;
+    rdfs:range xsd:string ;
+    rdfs:label "description" ;
+    rdfs:comment "Answers: what free-text context explains this Entity when the structured fields aren't enough — e.g. a Constraint's actual rule text, or a Decision's rationale?" .
+
+:createdAt a owl:DatatypeProperty ;
+    rdfs:domain :Entity ;
+    rdfs:range xsd:dateTime ;
+    rdfs:label "createdAt" ;
+    rdfs:comment "Answers: when did this Entity enter the graph, for recency ordering and for telling a stale node from a current one across sessions?" .
+
+:priority a owl:DatatypeProperty ;
+    rdfs:domain :Task ;
+    rdfs:range xsd:integer ;
+    rdfs:label "priority" ;
+    rdfs:comment "Answers: which open Task should be worked next when several are unblocked?" .
+
+:toolName a owl:DatatypeProperty ;
+    rdfs:domain :ToolCall ;
+    rdfs:range xsd:string ;
+    rdfs:label "toolName" ;
+    rdfs:comment "Answers: which tool was invoked, so its JSON Schema / argument contract can be looked up before the ontology-level check runs?" .
+
+:argumentsJson a owl:DatatypeProperty ;
+    rdfs:domain :ToolCall ;
+    rdfs:range xsd:string ;
+    rdfs:label "argumentsJson" ;
+    rdfs:comment "Answers: exactly what arguments were passed, so a rejected or failed call can be replayed, diffed, or repaired instead of re-guessed?" .
+
+:outcome a owl:DatatypeProperty ;
+    rdfs:domain :ToolCall ;
+    rdfs:range xsd:string ;
+    rdfs:label "outcome" ;
+    rdfs:comment "Answers: did this ToolCall succeed, fail, or get repaired, so audit and retry logic don't have to re-derive it from a log line?" .
+
+:changesTerm a owl:DatatypeProperty ;
+    rdfs:domain :Decision ;
+    rdfs:range xsd:string ;
+    rdfs:label "changesTerm" ;
+    rdfs:comment "Answers: which ontology class or property (by name, e.g. 'Environment' or 'dependsOn') did this Decision add, change, or reject, so ontology evolution stays auditable from the graph itself instead of only from commit history? Added instead of a separate audit/log class per growing-the-ontology.md step (b): :Decision already generalizes 'why was X chosen' — an ontology edit is one more thing that was chosen, not a new kind of thing." .

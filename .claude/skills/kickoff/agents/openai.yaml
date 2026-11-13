@@ -1,0 +1,6 @@
+interface:
+  display_name: "Project Kickoff"
+  short_description: "Scope project shape, skills, layers, and integrations."
+  default_prompt: "Use $kickoff to scope and activate this project."
+policy:
+  allow_implicit_invocation: true

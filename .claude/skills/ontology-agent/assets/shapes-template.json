@@ -1,0 +1,94 @@
+{
+  "$comment": "JSON structural mirror of references/shapes-core.ttl, in the shape-registry format scripts/validate_tool_call.py's generic evaluator (evaluate_shape / evaluate_property_shape) reads at runtime. Copy this file to <project-root>/.ontology-agent/schema/shapes.json (bootstrap.py does this automatically). Per the 'Named Limitation' section of references/validation-protocol.md, this file does NOT auto-sync with shapes-core.ttl -- if shapes-core.ttl gains a shape, tightens a constraint, or renames a property, this file (and the copy already deployed under a project's .ontology-agent/schema/) must be updated by hand to match.",
+  "shapes": {
+    "EntityShape": {
+      "targetClass": "Entity",
+      "properties": [
+        { "path": "name", "datatype": "string", "minCount": 1, "maxCount": 1 }
+      ]
+    },
+    "TaskShape": {
+      "targetClass": "Task",
+      "properties": [
+        {
+          "path": "name",
+          "datatype": "string",
+          "minCount": 1,
+          "maxCount": 1,
+          "$comment": "Restated from EntityShape rather than inherited: this evaluator does not compose supertype shapes automatically (each tool's x-shape-target selects exactly one shape), so TaskShape must be self-contained -- see validation-protocol.md's 'third simplification'."
+        },
+        {
+          "path": "status",
+          "datatype": "string",
+          "in": ["open", "in_progress", "blocked", "done", "cancelled"],
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "path": "priority",
+          "datatype": "integer",
+          "minInclusive": 1,
+          "maxInclusive": 5
+        },
+        {
+          "path": "ownedBy",
+          "class": "Person",
+          "maxCount": 1
+        },
+        {
+          "path": "blocks",
+          "class": "Task"
+        }
+      ]
+    },
+    "DecisionShape": {
+      "targetClass": "Decision",
+      "$comment": "shapes-core.ttl also declares sh:or([:dependsOn minCount 1] [:constrains minCount 1]) on DecisionShape. This evaluator has no sh:or/sh:xone support (see the supported-constraint table in validation-protocol.md), so that disjunctive 'needs at least one real edge' rule is NOT enforced here -- a real, documented gap, not an oversight. No tool currently declares x-shape-target: Decision, so this is currently unreachable from validate_tool_call.py's CLI path.",
+      "properties": [
+        {
+          "path": "status",
+          "datatype": "string",
+          "in": ["proposed", "accepted", "superseded", "reversed"],
+          "maxCount": 1
+        },
+        { "path": "constrains", "class": "Entity" },
+        { "path": "dependsOn", "class": "Entity" },
+        { "path": "changesTerm", "datatype": "string", "maxCount": 1 }
+      ]
+    },
+    "ToolCallShape": {
+      "targetClass": "ToolCall",
+      "properties": [
+        { "path": "toolName", "datatype": "string", "minCount": 1, "maxCount": 1 },
+        { "path": "argumentsJson", "datatype": "string", "minCount": 1, "maxCount": 1 },
+        {
+          "path": "outcome",
+          "datatype": "string",
+          "in": ["proposed", "validated", "executed", "failed", "repaired"],
+          "maxCount": 1
+        },
+        { "path": "validatedBy", "class": "Constraint" }
+      ]
+    },
+    "FileShape": {
+      "targetClass": "File",
+      "properties": [
+        { "path": "path", "datatype": "string", "minCount": 1, "maxCount": 1 },
+        { "path": "declares", "class": "Symbol" }
+      ]
+    },
+    "DependencyShape": {
+      "targetClass": "Dependency",
+      "properties": [
+        { "path": "name", "datatype": "string", "minCount": 1, "maxCount": 1 },
+        { "path": "dependsOn", "class": "Entity", "minCount": 1 }
+      ]
+    },
+    "ConstraintShape": {
+      "targetClass": "Constraint",
+      "properties": [
+        { "path": "description", "datatype": "string", "minCount": 1 }
+      ]
+    }
+  }
+}

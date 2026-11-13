@@ -1,0 +1,4 @@
+interface:
+  display_name: "Human Review Queue"
+  short_description: "Deploy durable, reviewer-routed decision queues"
+  default_prompt: "Use $human-review-queue to deploy a durable human decision queue in this repository."
