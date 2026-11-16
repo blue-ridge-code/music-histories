@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "course_id": "MH-C001",
+  "edition_id": "MH-C001-working",
+  "edition_key": "working",
+  "title": "Music, Power & Memory",
+  "status": "draft",
+  "based_on": null,
+  "release_tag": null,
+  "approved_by": null,
+  "approved_on": null,
+  "source_snapshot": "2026-11-16-drive-handoff",
+  "source_state": "imported_not_freshly_verified",
+  "formats": [
+    "color",
+    "monochrome"
+  ],
+  "default_print": {
+    "width_inches": 8.5,
+    "height_inches": 11,
+    "bleed": "none_unless_approved",
+    "minimum_raster_ppi": 300
+  },
+  "central_question": "Who is music for — and who has the power to decide?",
+  "records": {
+    "films": "records/films.csv",
+    "listening": "records/listening.csv",
+    "chapters-pages": "records/chapters-pages.csv",
+    "sources-rights": "records/sources-rights.csv",
+    "decisions": "records/decisions.csv"
+  },
+  "publication_status": "not_authorized",
+  "reviewer": "project_owner"
+}

@@ -1,5 +1,11 @@
 # Decisions
 
+Music Histories entries start at D-013. D-000–D-012 are inherited template history,
+retained for provenance; their active statuses describe template infrastructure,
+not approval of this series, its manuscript, or its design.
+For new project decisions use approved, provisional, rejected, or superseded;
+record who decided and the evidence. Do not silently promote provisional choices.
+
 Append-only log of significant decisions. Never rewrite or delete an entry: when a decision
 is replaced, add a new entry that supersedes it and mark the old one
 `Status: superseded-by-D-00X`.
@@ -428,3 +434,96 @@ Decision: Adopt the template's conventions (AGENTS.md, docs/agents/*, kickoff or
 Consequences: All agents share one instruction source; project-specific choices are
 recorded here from D-001 onward.
 Revisit when: The template itself is replaced or forked.
+
+## D-013 | 2026-11-13 | Establish Music Histories and the Amadeus pilot
+Status: approved — explicit owner instruction S00; underlying source files uninspected.
+Owner: project owner.
+Evidence:
+  - Scope: [PROJECT.md](PROJECT.md)
+  - Intake: [source inventory](../sources/SOURCE_INDEX.md)
+Context: The fresh template lacked a project identity; the owner supplied a concrete brief.
+Decision: Music Histories is a modular adult course library; Cinematic Music History
+is the documented initiative. Course I and Amadeus Chapter 1 are established.
+First session is inventory and identity interview; first production milestone is a
+traceable proofed Who’s Who page. Future course scope remains open.
+Consequences: Proceed in planning-active; do not invent missing manuscript or manifests.
+Revisit when: Recovered authoritative sources conflict with this brief.
+
+## D-014 | 2026-11-13 | Prepare locally and hold publication
+Status: superseded-by-D-018 — original decision was approved — owner instruction S00; no visibility choice yet.
+Owner: project owner.
+Evidence:
+  - Publication work item: [W07](work-plan.md#w07--decide-visibility-and-publication-scope)
+  - Current boundary: [AGENTS.md](../AGENTS.md)
+Context: GitHub reports public; a read-only repository-page check confirmed the Public
+marker and isPrivate:false on 2026-11-13.
+Decision: Use local branch setup/music-histories-pilot. Keep raw/private locators
+ignored. Do not push, create public issues/PRs, or change visibility without owner
+direction and approval of publication scope. The authorized branch was created.
+Consequences: Use the local work plan as sole tracker during the hold, adapting the
+template's GitHub-first default. No remote writes or commits authorized by this entry.
+Revisit when: The owner gives an explicit visibility decision and publication scope.
+
+## D-015 | 2026-11-13 | Keep source approval separate from retrieval
+Status: approved — implementation of owner's requested source inventory.
+Owner: project owner for underlying source approvals; agent records observations.
+Evidence:
+  - Inventory: [SOURCE_INDEX.md](../sources/SOURCE_INDEX.md)
+Context: Approved manuscript and prototype versions were reported, but files are
+not accessible in this session.
+Decision: Label manuscript approval as owner-reported; label prototypes v0.2 as
+reported versions with approval unknown. Unknown dates stay unknown. Preserve
+source IDs, immutable originals, hashes, approval evidence and source conflicts.
+Consequences: No output is a recovered approved asset until the exact file is inspected.
+Revisit when: Files and approval records are supplied.
+
+## D-016 | 2026-11-13 | Validate three page types before full production
+Status: approved — explicit owner workflow S00; design choices remain open.
+Owner: project owner.
+Evidence:
+  - Pilot: [Amadeus](../courses/course-i/amadeus/README.md)
+  - Gated production record: [Who’s Who](../courses/course-i/amadeus/page-02-production.md)
+  - Open identity question: [series identity](design/series-identity.md)
+Context: Series recognition must survive different genres and different learning activities.
+Decision: Begin with page 2, preserve grid/key, approve copy before image prompting,
+and proof at print size in color/grayscale. Then test page 11's archival engagement
+and page 9's quiet listening before expanding. Demanding listening gets lighter
+activity (Inverse Play Law, project principle reported by owner).
+Consequences: No typography, palette, archival image, exact copy, or generated page
+is approved yet. Agent tone defaults in TONE.md are provisional.
+Revisit when: The owner resolves the identity interview or changes the page workflow.
+
+## D-017 | 2026-11-16 | Prepare versioned shared records
+Status: provisional — owner requested the framework; specific storage design awaits review.
+Owner: project owner.
+Evidence:
+  - Scope: [SCOPE.md](SCOPE.md)
+  - Contract: [shared records](../records/README.md)
+  - Course I: [working edition](../courses/course-i/editions/working/README.md)
+Context: The owner requested a complete-system scoping document and shared records
+for Course I that can support many course versions.
+Decision: Use portable CSV registers and JSON metadata with stable course/entity
+IDs, separately identified course editions, release references and print formats.
+Import source selections without inventing new approvals, rights, or listening scopes.
+Consequences: Future editions can preserve identity while changing sequence/content.
+Private originals remain ignored. Source-derived records are prepared locally;
+public GitHub publication still needs the visibility/exact-scope decision in D-014.
+Revisit when: The owner reviews the structure or a future edition needs schema changes.
+
+
+## D-018 | 2026-11-16 | Authorize routine open source project updates
+Status: approved — explicit owner instruction in chat; supersedes D-014.
+Owner: project owner.
+Evidence:
+  - Standing authority: [AGENTS.md](../AGENTS.md)
+  - Public scope: [PROJECT.md](PROJECT.md)
+Context: The owner approved publishing the prepared scope, framework and Course I
+metadata, confirmed an open source project, and said to push when needed without
+asking each time.
+Decision: Commit/push routine project updates and use review branches/PRs without
+repeat permission. Keep the repository public. Raw manuscripts, prompts, PDFs,
+images and private source links remain outside the approved publication scope.
+Consequences: The earlier publication hold is lifted for project updates. Rights,
+source-asset publication, final creative approval and license selection remain
+separate. No license is invented by this decision.
+Revisit when: The owner changes publication scope or selects an open source license.

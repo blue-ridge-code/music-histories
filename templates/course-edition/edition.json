@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "course_id": "REPLACE_COURSE_ID",
+  "edition_id": "REPLACE_EDITION_ID",
+  "edition_key": "working",
+  "title": "REPLACE_TITLE",
+  "status": "draft",
+  "based_on": null,
+  "release_tag": null,
+  "approved_by": null,
+  "approved_on": null,
+  "source_snapshot": null,
+  "source_state": "imported_not_freshly_verified",
+  "formats": [
+    "color",
+    "monochrome"
+  ],
+  "default_print": null,
+  "central_question": "",
+  "records": {
+    "films": "records/films.csv",
+    "listening": "records/listening.csv",
+    "chapters-pages": "records/chapters-pages.csv",
+    "sources-rights": "records/sources-rights.csv",
+    "decisions": "records/decisions.csv"
+  },
+  "publication_status": "not_authorized",
+  "reviewer": "project_owner"
+}

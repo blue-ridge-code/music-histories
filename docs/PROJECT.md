@@ -1,80 +1,94 @@
-# Project: <project name>
+# Music Histories
 
-> **Status: kickoff-pending** (default for repositories created from this template)
-> Agents: run the `kickoff` skill before any other work (AGENTS.md, Rule #1).
-> Lifecycle: `kickoff-pending` -> `planning-active` -> `implementation-ready` -> `operational`
-> (see [docs/agents/lifecycle.md](agents/lifecycle.md) for what each phase permits and the
-> `Status: active` migration rule). Minimal kickoff ends at `planning-active` — it does not
-> wait on optional runtimes, full provider configuration, device access, or implementation
-> tooling.
-> Template-source exception: if `git remote get-url origin` points to
-> `blue-ridge-code/vscode-template` (HTTPS or SSH), skip kickoff and preserve this file as
-> distributable template content.
+Status: planning-active
+Entered: 2026-11-13, from the owner's transferred project brief (S00).
 
 ## Mission
 
-<!-- One paragraph: what this project is and why it exists. -->
+Build a modular library of standalone film-and-listening courses for adult learners.
+Cinematic Music History is the documented initiative. Course I is established;
+Amadeus is Chapter 1 and the first companion-workbook production pilot.
+Explore culture, geography, technology, power, migration, identity, and historical
+change through films and listening. A course normally combines roughly 10–15 core
+films, optional extensions, curated YouTube listening, and a workbook/study guide.
+Listening roles: Before, Inside, Beside, After, Bridge. Individual assignments
+remain subject to the recovered manifests.
 
-## Project type
+## Project type and shape
 
-<!-- software | writing | research | admin-errand | organization | mixed -->
-
-## Project shape
-
-<!-- Scale band: 1 | 2-5 | 6-20 | 20+ top-level work areas.
-     Count modules/packages/services for software; count distinct work-product or
-     subject-area folders otherwise. Exclude repository support folders.
-     Writing/research/mixed: also record expected source-file count when relevant.
-     Session horizon: single-session | multi-session. -->
+Writing, research, visual publishing, with production tools added when needed.
+Multi-session. Initial work-product areas: series design and the Course I workbook
+pilot (2–5 band); do not count agent infrastructure as course content.
+At least 13 named source records/assets are expected; the final source count is
+unknown. Future courses, titles, chapters, and scope are open questions.
 
 ## Stakeholders and audience
 
-<!-- Who this is for; who is affected; who approves external-facing output. -->
+Adult learners are the audience. The project owner is the final reviewer for
+scope, series identity, copy, print proofs, and publication. Agent editorial
+review is advisory; no outside reviewer has been appointed.
 
 ## Definition of done
 
-<!-- Observable end state. How will we know this project succeeded? -->
+First session: inventory known materials and access gaps; establish a minimal
+local project home; bring the first visual-identity question.
+First milestone: one proofed page 2, Who’s Who, with an unbroken record from
+source/research brief through approved copy and prompt to exact input assets,
+generated output, color/grayscale print proof, and owner disposition.
+Validate the system on page 11, Mozart’s Hand, and page 9, The Commendatore Scene,
+before producing the full chapter. No finished page has been produced here.
 
-## Hard constraints
+## Constraints and autonomy
 
-<!-- Deadlines, budget, privacy requirements, legal/safety boundaries. -->
+The owner confirmed this is an open source project on 2026-11-16 and granted
+standing authorization to commit/push routine project updates without asking again.
+Documentation, framework, and Course I metadata/manifests may be public. Raw
+manuscripts/prompts/images/PDFs and private locators remain excluded from this
+publication scope. No license has yet been selected. No deadline/budget supplied.
+Preserve existing puzzle grid and answer key. Copy approval precedes whole-page
+prompting and generation. Source and image rights/credits must be recorded before
+publication. Other human gates remain in AGENTS.md.
 
-## Autonomy level
+## Lifecycle
 
-<!-- Agreed at kickoff, per AGENTS.md "Human gates". Note any project-specific
-     additions to the human-owned list. -->
+Planning active is authorized by the current request; project implementation
+remains subject to the planning gate; routine repository publication is authorized above. The design interview proceeds one
+consequential question at a time: answer, challenge, researched precedent,
+candidate rule, explicit owner approval. Do not run the template interview again
+for facts the owner already supplied. Unanswered design choices remain open.
 
-## Lifecycle phase
+## Architecture
 
-<!-- Current phase: kickoff-pending | planning-active | implementation-ready | operational.
-     Record the date each phase was entered and, for implementation-ready, the owner who
-     approved the transition and the date. See docs/agents/lifecycle.md. -->
+The [system scope](SCOPE.md) and [record contract](../records/README.md) now define
+series/course/edition/chapter/page boundaries and reusable record schemas.
+Course I records live in `courses/course-i/editions/working/`; the existing
+Amadeus folder remains the pilot's working production evidence. Future editions
+get separate directories and stable identities; no course release exists yet.
 
-## Architecture / areas of concern
+- `docs/`: project index, decisions, work plan, series visual identity.
+- `sources/`: source inventory; ignored `raw/` for private locators and originals.
+- `courses/course-i/amadeus/`: pilot brief and page-production record.
+- Additional course manifests, listening manifests, research, workbooks, and tools
+  will be added when real sources or work require them; no invented course names.
 
-<!-- Software: modules with small, non-overlapping boundaries (nested AGENTS.md per area).
-     Non-software: the work products and folder conventions. Decided at kickoff. -->
+## Layers and tooling
 
-## Activated layers
+Source inventory/intake and local work plan active. Routine GitHub updates are
+authorized. Keep one tracker; migrate local tasks to Issues only once when implemented. Wiki deferred until sources are recovered and cross-reference
+needs are known. No ontology: no software module graph exists. No queue server
+or speculative production tooling. Existing local skills remain available.
+Kickoff guidance applied to the supplied brief; no external skill installation
+was needed for this document-only first session. Research/editorial tools can be
+selected when the relevant work item begins.
 
-<!-- Apply docs/agents/layer-activation-guide.md. Record wiki, intake, tracker, and
-     external-tool decisions with reasons. Delete what is not activated. -->
+## Tone baseline
 
-## Skills installed
+See TONE.md. Adult audience is confirmed; warmth, register, and visual tone remain
+provisional until the design interview. Do not invent approved style examples.
 
-<!-- Core/default: human-review-queue ships checked in; its runtime deploys only when the
-     project has a concrete review gate. Kickoff selects skills for every phase but installs
-     just-in-time, in three buckets — record each skill under the bucket it's in:
-       - Installed now (planning phase): wayfinder, grilling, and any of research /
-         domain-modeling / prototype the project selected. Recorded in skills-lock.json.
-       - Selected; installs at first session boundary: handoff.
-       - Selected; installs at implementation-ready: codebase-design, tdd, diagnosing-bugs,
-         code-review (whichever the project selected).
-     ontology-agent: record "selected; activation deferred" here if chosen before the
-     project has 6+ real modules or real dependency manifests (see layer-activation-guide.md
-     and the ontology-agent SKILL.md). -->
+## Open questions
 
-## Tracker
-
-<!-- GitHub Issues (default for repos) | docs/backlog.md (local mode) |
-     none (single session, no blockers or dependencies) -->
+Series identity and allowed variation; trim size, binding, margins, color process,
+output resolution and proof method; authoritative source versions and conflicts;
+full listening assignments; archival-facsimile source and rights; future course
+titles and scope; open source license and permission to publish excluded source assets.
