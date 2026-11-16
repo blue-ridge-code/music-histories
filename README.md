@@ -1,5 +1,9 @@
 # Music Histories
 
+[Stable film/listening links](links/README.md): a community-maintained directory
+with country-specific destinations. Deployment details and current limitations
+are documented there; verify the live address before printing links.
+
 [System scope](docs/SCOPE.md) · [Course I shared records](courses/course-i/editions/working/README.md) ·
 [Record/versioning contract](records/README.md) · [New-edition template](templates/course-edition/README.md)
 

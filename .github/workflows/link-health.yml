@@ -1,0 +1,21 @@
+name: Observe link health
+on:
+  schedule:
+    - cron: '20 8 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 scripts/check-link-health.py --output link-health.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: link-health-observations
+          path: link-health.json
+          retention-days: 90

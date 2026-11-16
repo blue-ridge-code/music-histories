@@ -38,7 +38,7 @@ def main():
     parser.add_argument('--with-local-assets', action='store_true')
     args = parser.parse_args()
     catalog = json.loads((ROOT / 'courses/catalog.json').read_text())
-    require(catalog.get('schema_version') == 1, 'Unsupported catalog schema')
+    require(catalog.get('schema_version') == 2, 'Unsupported catalog schema')
     courses = catalog['courses']
     unique(courses, 'course_id', 'catalog')
     for course in courses:
@@ -48,7 +48,7 @@ def main():
             base = ROOT / 'courses' / course['path'] / entry['path']
             metadata = json.loads((base / 'edition.json').read_text())
             cid, eid = course['course_id'], entry['edition_id']
-            require(metadata.get('schema_version') == 1, f'{eid}: unsupported schema')
+            require(metadata.get('schema_version') == 2, f'{eid}: unsupported schema')
             require(metadata.get('course_id') == cid and metadata.get('edition_id') == eid,
                     f'{eid}: metadata identity mismatch')
             require(metadata.get('status') == entry['status'], f'{eid}: catalog status mismatch')

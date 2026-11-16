@@ -1,5 +1,7 @@
 # Project index
 
+Media access: [stable-link registry and country-routing operations](../links/README.md).
+
 Reuse: [licenses](../LICENSE.md), [attribution](../ATTRIBUTION.md),
 [contributors](../CONTRIBUTORS.md), and [contribution guide](../CONTRIBUTING.md).
 

@@ -1,5 +1,19 @@
 # Local work plan
 
+## W09 · Maintain stable film and listening links
+Status: implementation prepared for review; deployment pending. Reviewer: owner.
+Deliverable: [resolver and operations](../links/README.md), registry seeded from
+Course I, country filtering, update/report form, weekly HTTP observation workflow.
+Sources: owner's stable-link request, Course I manifests, D-021.
+Acceptance: unchanged printed IDs; editable public destinations; same recording
+versus explicit alternatives; saved country choice and exclusions; unknown/dead
+destination behavior; safe registry validation and routing/browser checks; no
+claims of playback/rights from HTTP status; verified hosting before printed use.
+Evidence: scripts/tests/test_link_registry.py, scripts/tests/link-routing.test.mjs.
+
+Restoration update: PR #1 is merged. The earlier stable-link pause is lifted;
+its implementation remains a separate change from the governance merge.
+
 2026-11-16 governance update: D-020 restores template operational instructions.
 GitHub API access is verified, but this work plan remains the explicit temporary
 sole tracker until a one-time migration is implemented. The stable-link task is

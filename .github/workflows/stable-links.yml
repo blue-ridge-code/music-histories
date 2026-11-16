@@ -1,0 +1,46 @@
+name: Stable links
+on:
+  pull_request:
+    paths: ['links/**', 'site/**', 'courses/**', 'templates/course-edition/**', 'scripts/*link*.py', 'scripts/validate-course-records.py', 'scripts/tests/*link*', '.github/workflows/stable-links.yml']
+  push:
+    branches: [main, 'setup/**']
+    paths: ['links/**', 'site/**', 'courses/**', 'templates/course-edition/**', 'scripts/*link*.py', 'scripts/validate-course-records.py', 'scripts/tests/*link*', '.github/workflows/stable-links.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 scripts/validate-course-records.py
+      - run: node --test scripts/tests/link-routing.test.mjs
+      - run: python3 scripts/tests/test_link_registry.py
+      - run: python3 scripts/build-link-site.py
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        with:
+          path: dist
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: check
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy stable links
+        id: deployment
+        uses: actions/deploy-pages@v4

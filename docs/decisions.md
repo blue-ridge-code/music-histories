@@ -573,3 +573,26 @@ and authenticated repository access are now verified; this does not establish
 every administration scope. Unfinished stable-link edits are excluded from this
 restoration commit and merge. Browser-unavailable cases report their limitation.
 Revisit when: Template workflow changes, tracker migration, or new owner scope approval.
+
+## D-021 | 2026-11-16 | Use persistent media IDs and a country-aware source directory
+Status: implementation decision within the owner's requested stable-link scope;
+deployment and destination availability are separate verification steps.
+Owner: project owner; implementation prepared by agent for review.
+Evidence:
+  - Operations and boundaries: [links/README.md](../links/README.md)
+  - Registry: [resources.json](../links/resources.json)
+  - Routing scenarios: [link-routing.test.mjs](../scripts/tests/link-routing.test.mjs)
+  - Registry guards: [test_link_registry.py](../scripts/tests/test_link_registry.py)
+Context: Provider URLs decay and availability differs by country. Printed course
+links need an updateable destination that preserves the intended media identity.
+Decision: Provide a static landing page keyed by immutable resource ID, maintained
+through GitHub PRs/issues. Import 60 curated destinations with unknown availability
+and 16 film IDs without invented sources. Readers choose/save a country locally;
+specific sources outrank unspecified fallbacks and exclusions apply first. Do not
+infer country from language, silently replace performances, or deploy IP tracking.
+Consequences: Schema 2 adds stable_link_id while preserving original source URLs.
+Weekly HTTP artifacts support maintenance but do not establish playback or rights.
+GitHub Pages activation and live output verification are required before printing
+links. This change is separate from the merged governance restoration in PR #1.
+Revisit when: A project-owned domain, automatic country service, new provider, or
+different intended recording/assignment is proposed.

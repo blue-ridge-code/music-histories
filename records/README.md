@@ -1,4 +1,4 @@
-# Shared-record contract · schema 1
+# Shared-record contract · schema 2
 
 [Scope](../docs/SCOPE.md) · [Course catalog](../courses/catalog.json) ·
 [Course I working edition](../courses/course-i/editions/working/README.md)
@@ -92,3 +92,13 @@ URL selection precedence, approval metadata, and release metadata. It reports
 unresolved draft information separately. It does not judge history, learning
 quality, musical accuracy, permissions, playback or actual print quality.
 Use --with-local-assets to additionally verify recovered original hashes locally.
+
+
+## Schema 1 → 2 migration
+
+Schema 2 adds stable_link_id to films.csv and listening.csv and sets catalog and
+edition metadata schema_version to 2. IDs reference links/resources.json. Original
+candidate, override and selected URLs remain source evidence; workbook links use
+the stable resolver instead. Existing IDs, order and approvals are unchanged.
+Only the current draft/template exist, so no released snapshots were rewritten.
+See [stable-link operations](../links/README.md) for country routing and maintenance.

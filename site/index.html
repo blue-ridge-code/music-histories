@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Find your film or music · Music Histories</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header><a href="./">Music Histories</a><a href="https://github.com/blue-ridge-code/music-histories">Community &amp; source</a></header>
+  <main>
+    <p class="eyebrow">WATCH · LISTEN · EXPLORE</p>
+    <h1 id="title">Find your film or music.</h1>
+    <p id="intro">One lasting link. Sources the community can keep up to date.</p>
+    <div class="country-control">
+      <label for="country">Where will you watch or listen?</label>
+      <select id="country"><option value="">Choose a country</option></select>
+      <p class="hint">Saved only in this browser. We do not detect your location or use a geolocation service.</p>
+    </div>
+    <div id="content" aria-live="polite"><p>Loading sources…</p></div>
+    <noscript><p>JavaScript is needed for country filtering. You can also browse the <a href="https://github.com/blue-ridge-code/music-histories/blob/main/links/resources.json">source registry</a> directly.</p></noscript>
+  </main>
+  <footer>Availability can change by country, service, and subscription. These links do not grant access or bypass regional restrictions.</footer>
+  <script type="module" src="./app.mjs"></script>
+</body>
+</html>
