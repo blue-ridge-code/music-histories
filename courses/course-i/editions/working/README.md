@@ -32,7 +32,7 @@ Sixty source Approve cells are recorded as source_recorded, not fresh owner appr
 - Historical link checks are preserved; no new playback or viewing-availability check.
 - Page purposes/actions beyond the three pilot pages require editorial inspection;
   placeholders are explicit and carry no completion claim.
-- Rights, credits, final copy/design/print proofs, license choice and excluded-asset publication scope.
+- Rights, credits, final copy/design/print proofs, third-party rights and excluded-asset publication scope.
 
 PDF prototypes and manuscripts remain ignored local originals. No private Drive or
 ChatGPT source locators appear in these CSVs. YouTube selections remain source

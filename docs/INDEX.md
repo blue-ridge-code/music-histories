@@ -1,5 +1,8 @@
 # Project index
 
+Reuse: [licenses](../LICENSE.md), [attribution](../ATTRIBUTION.md),
+[contributors](../CONTRIBUTORS.md), and [contribution guide](../CONTRIBUTING.md).
+
 System definition: [scoping document](SCOPE.md).
 Shared records: [contract and versioning](../records/README.md),
 [Course I](../courses/course-i/README.md), and

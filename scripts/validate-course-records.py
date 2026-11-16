@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 Music Histories contributors
 """Validate portable course registers; no network access or third-party packages."""
 import argparse
 import csv

@@ -2,6 +2,7 @@
 
 ## Authorities
 
+- [Licensing and attribution](LICENSE.md), [contribution guidance](CONTRIBUTING.md)
 - [Project scope and lifecycle](docs/PROJECT.md)
 - [System scope](docs/SCOPE.md) and [shared-record contract](records/README.md)
 - [Project index](docs/INDEX.md) and [source inventory](sources/SOURCE_INDEX.md)
@@ -45,7 +46,7 @@ Publish project documentation, framework, and Course I metadata/manifests as nee
 Keep private source locators and raw manuscripts, prompts, PDFs, and images under
 ignored `sources/raw/`; these were excluded from the approved publication scope.
 Publishing those assets requires a separate rights/scope decision. Open source
-intent alone does not grant rights to third-party material or select a license.
+intent alone does not grant rights to third-party material or grant third-party rights.
 Use separate branches or requested worktrees for independent work and PRs for review.
 
 ## Continuity

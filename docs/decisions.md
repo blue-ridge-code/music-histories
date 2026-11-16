@@ -527,3 +527,24 @@ Consequences: The earlier publication hold is lifted for project updates. Rights
 source-asset publication, final creative approval and license selection remain
 separate. No license is invented by this decision.
 Revisit when: The owner changes publication scope or selects an open source license.
+
+## D-019 | 2026-11-16 | Adopt standard CC BY 4.0 and MIT licenses
+Status: approved — owner agreed to the proposed policy with no special CC amendment.
+Owner: project owner.
+Evidence:
+  - Scope and exclusions: [LICENSE.md](../LICENSE.md)
+  - Creative license: [CC BY 4.0](../LICENSES/CC-BY-4.0.txt)
+  - Software license: [MIT](../LICENSES/MIT.txt)
+  - Designated credit: [ATTRIBUTION.md](../ATTRIBUTION.md)
+Context: The owner wants permissive reuse and commercial adaptation with contributor
+credit and the repository supplied as the source link, using standard terms.
+Decision: License original creative materials under CC BY 4.0 and original
+production code under MIT. Designate Music Histories contributors as the collective
+credit and the public repository URL as supplied source information. Add no special
+sale, link-placement, revenue-sharing, or share-alike conditions.
+Consequences: Preserve individual/source notices. Third-party and inherited assets
+retain their own rights; unverified inherited rights are not relicensed. Existing
+raw-asset publication exclusions remain. License texts were reproduced from SPDX's
+license-list-data; CC text is unchanged and only MIT's copyright holder/year is filled.
+Revisit when: A new asset needs an exception or the owner proposes a licensing change;
+existing grants cannot simply be withdrawn from recipients following their terms.

@@ -44,7 +44,8 @@ The owner confirmed this is an open source project on 2026-11-16 and granted
 standing authorization to commit/push routine project updates without asking again.
 Documentation, framework, and Course I metadata/manifests may be public. Raw
 manuscripts/prompts/images/PDFs and private locators remain excluded from this
-publication scope. No license has yet been selected. No deadline/budget supplied.
+publication scope. CC BY 4.0 covers original creative material; MIT covers original production code.
+See [licensing](../LICENSE.md); third-party and inherited rights remain separate. No deadline/budget supplied.
 Preserve existing puzzle grid and answer key. Copy approval precedes whole-page
 prompting and generation. Source and image rights/credits must be recorded before
 publication. Other human gates remain in AGENTS.md.
@@ -91,4 +92,4 @@ provisional until the design interview. Do not invent approved style examples.
 Series identity and allowed variation; trim size, binding, margins, color process,
 output resolution and proof method; authoritative source versions and conflicts;
 full listening assignments; archival-facsimile source and rights; future course
-titles and scope; open source license and permission to publish excluded source assets.
+titles and scope; permission to publish excluded source assets and third-party rights clearance.

@@ -32,8 +32,8 @@ Future course titles and scope remain open.
 
 **Open source project.** The owner authorized routine public repository updates
 on 2026-11-16. Private source locators and raw manuscripts, prompts, images, and
-PDFs remain excluded. An open source license still needs to be selected; no
-third-party rights are implied. See [decisions](docs/decisions.md).
+PDFs remain excluded. Original creative material is licensed under CC BY 4.0 and original production
+code under MIT; see [licensing](LICENSE.md). Third-party rights remain separate. See [decisions](docs/decisions.md).
 
 The inherited Python verification suite is available:
 `PYTHONDONTWRITEBYTECODE=1 python3 scripts/tests/run_all.py`.
