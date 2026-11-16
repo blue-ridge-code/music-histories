@@ -548,3 +548,28 @@ raw-asset publication exclusions remain. License texts were reproduced from SPDX
 license-list-data; CC text is unchanged and only MIT's copyright holder/year is filled.
 Revisit when: A new asset needs an exception or the owner proposes a licensing change;
 existing grants cannot simply be withdrawn from recipients following their terms.
+
+## D-020 | 2026-11-16 | Restore template instruction wiring
+Status: approved — owner requested the reviewed restoration, push and merge.
+Owner: project owner.
+Evidence:
+  - Canonical instructions: [AGENTS.md](../AGENTS.md)
+  - Lifecycle: [lifecycle.md](agents/lifecycle.md)
+  - Tracker override: [issue-tracker.md](agents/issue-tracker.md)
+  - Regression scenarios: [test_instruction_wiring.py](../scripts/tests/test_instruction_wiring.py)
+Context: The shortened project AGENTS.md removed operational entry points even
+though dependent skills, adapters and scripts remained. Keeping an archived copy
+did not keep those instructions active. Earlier keyword tests missed that loss.
+Decision: Restore the canonical-source declaration, kickoff/lifecycle gates,
+complete authority map, human/review-queue gates, evidence/intake routing,
+provider independence, token/file handoffs, documentation hygiene, operational
+index and platform/date/secret conventions. Preserve Music Histories additions
+and explicit owner authorization as a separate project policy section.
+Consequences: Template operational norms remain active. The local work plan stays
+the sole tracker under a documented temporary override until a one-time migration.
+Record implementation-ready only for the already requested course-record and
+stable-link tools; workbook creative approvals remain pending. GitHub API reads
+and authenticated repository access are now verified; this does not establish
+every administration scope. Unfinished stable-link edits are excluded from this
+restoration commit and merge. Browser-unavailable cases report their limitation.
+Revisit when: Template workflow changes, tracker migration, or new owner scope approval.

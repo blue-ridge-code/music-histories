@@ -1,5 +1,6 @@
-> Superseded for Music Histories on 2026-11-13 by [AGENTS.md](../../AGENTS.md).
-> This is an archival snapshot of inherited instructions, not current creative authority.
+> Historical snapshot of the initial template AGENTS.md, retained for provenance.
+> The live [AGENTS.md](../../AGENTS.md) restores its operational norms and records
+> explicit project exceptions. This snapshot is not a second instruction authority.
 
 ```markdown
 # AGENTS.md — how agents work in this project

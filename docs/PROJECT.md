@@ -1,7 +1,9 @@
 # Music Histories
 
-Status: planning-active
-Entered: 2026-11-13, from the owner's transferred project brief (S00).
+Status: implementation-ready
+Planning entered: 2026-11-13, from the owner's transferred project brief (S00).
+Scoped implementation recorded: 2026-11-16, from the owner's explicit requests
+to build shared course records and stable-link tooling; see Lifecycle below.
 
 ## Mission
 
@@ -52,11 +54,18 @@ publication. Other human gates remain in AGENTS.md.
 
 ## Lifecycle
 
-Planning active is authorized by the current request; project implementation
-remains subject to the planning gate; routine repository publication is authorized above. The design interview proceeds one
-consequential question at a time: answer, challenge, researched precedent,
-candidate rule, explicit owner approval. Do not run the template interview again
-for facts the owner already supplied. Unanswered design choices remain open.
+Implementation-ready applies to the specifically requested course-record and
+stable-link production tooling, authorized by the owner on 2026-11-16. This records
+the existing implementation requests, not a general approval of workbook design
+or other product work. The stable-link implementation remains local and paused
+while this governance restoration is completed. No operational/deployment claim
+is made. Routine repository publication is authorized above.
+
+Workbook design remains in planning. The interview proceeds one consequential
+question at a time: answer, challenge, researched precedent, candidate rule,
+explicit owner approval. Exact copy, visual rules and final proofs remain gated.
+Do not repeat the kickoff interview for facts the owner already supplied.
+Unanswered creative choices remain open.
 
 ## Architecture
 
@@ -74,7 +83,9 @@ get separate directories and stable identities; no course release exists yet.
 
 ## Layers and tooling
 
-Source inventory/intake and local work plan active. Routine GitHub updates are
+Source inventory/intake and local work plan active. The local work plan is the
+explicit temporary tracker override; docs/agents/issue-tracker.md documents the
+one-time migration path. GitHub API access was verified on 2026-11-16. Routine GitHub updates are
 authorized. Keep one tracker; migrate local tasks to Issues only once when implemented. Wiki deferred until sources are recovered and cross-reference
 needs are known. No ontology: no software module graph exists. No queue server
 or speculative production tooling. Existing local skills remain available.

@@ -1,5 +1,10 @@
 # Local work plan
 
+2026-11-16 governance update: D-020 restores template operational instructions.
+GitHub API access is verified, but this work plan remains the explicit temporary
+sole tracker until a one-time migration is implemented. The stable-link task is
+paused and remains outside the governance restoration merge.
+
 2026-11-16 publication update: W07 is resolved by D-018. Routine public project
 updates are authorized; raw assets/private locators remain excluded. Earlier
 publication-hold statements below are historical. This remains the sole tracker

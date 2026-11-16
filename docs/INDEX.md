@@ -25,8 +25,11 @@ Latest intake: [Workbook source recovery · 2026-11-16](source-recovery.md).
 Recovered Series Bible, Project Index, Continuity Registry, and manifests will be
 registered by source ID before deriving new content. This repository index is a
 navigation aid; it does not supersede the existing Workbook System Project Index
-(S03), which has not been retrieved. Source conflicts require owner resolution.
+(S03), recovered in the 2026-11-16 source package. Source conflicts require owner resolution.
 
-Inherited `docs/agents/`, `docs/MAINTENANCE.md`, `docs/REVIEW.md`, `gauntlet/`,
-and earlier decision entries describe template infrastructure. They are retained
-for provenance, not promoted into Music Histories creative authority.
+Operational `docs/agents/` instructions remain active, including lifecycle, skill
+composition/verification, model/session conventions, intake, language/voice and
+layer activation. `docs/MAINTENANCE.md` applies when feeding improvements back to
+the template; `docs/REVIEW.md` and `gauntlet/` apply when their workflows are used.
+Earlier template decisions supply operational history, not creative approval of
+Music Histories content. The root AGENTS.md retains the operational entry points.
