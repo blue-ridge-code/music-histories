@@ -7,6 +7,16 @@ record `none` in `docs/PROJECT.md`; its current user request is its work boundar
 continues into another session or gains dependencies, activate one tracker before adding
 new work. Once active, nothing about a unit of work exists outside its tracker entry.
 
+## Current project override
+
+Music Histories temporarily uses [docs/work-plan.md](../work-plan.md) as its sole
+tracker, carried forward from the owner-authorized local preparation phase.
+GitHub API access is now verified; this is no longer a connectivity claim.
+Keep this explicit override until a one-time migration creates the issue map,
+work items and dependency links, then retire the local work plan. Do not create
+an independent parallel issue backlog. The conventions below still apply to the
+future GitHub tracker. This restoration does not perform the migration.
+
 ## Mode selection
 
 | Condition | Tracker |

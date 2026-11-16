@@ -57,3 +57,16 @@ Credentials, spending, publication, destructive actions, participant/human-subje
 device/hardware permissions, and external transmission stay human-gated in **every** phase —
 see `AGENTS.md`'s Human gates list. This phase model changes *when planning can start*, not
 what still needs a human.
+
+
+## Music Histories scope and existing authorization
+
+Current phase and owner-authorized implementation scope are recorded in
+[PROJECT.md](../PROJECT.md). The owner's direct requests to build the course-record
+framework and stable-link tooling authorize those specific components; they do
+not approve workbook text, visual identity, proofs, or unrelated product scope.
+
+The Git/publication gate remains in force, but the owner has supplied standing
+permission for routine project updates as recorded in AGENTS.md and D-018.
+Do not turn that permission into approval of excluded assets or a waiver of
+other human gates. Apply already-granted permission without repeated questions.

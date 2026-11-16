@@ -1,4 +1,4 @@
-# AGENTS.md — how agents work in this project
+# AGENTS.md — Music Histories
 
 This is the **canonical instruction source for every agent** working here — Kimi Code,
 Claude Code, Codex, Copilot, Cline. `CLAUDE.md` and `.github/copilot-instructions.md` are
@@ -35,7 +35,9 @@ Derived or generated artifacts never outrank their sources. If two sources disag
 
 ## Human gates
 
-Default autonomy: act freely on **local, reversible** work. **Always ask first** before:
+Default autonomy: act freely on **local, reversible** work. **Always ask first** before
+the following actions unless the owner has already explicitly authorized the action
+or its scope. Standing authorization is recorded under Project-specific policy below:
 
 - External contact — sending, submitting, publishing, posting (*draft but do not send*)
 - Spending money or changing a paid plan
@@ -57,7 +59,9 @@ The boundary is risk-based, not blanket. Read-only inspection — `git status`, 
 kickoff, for worktree inspection, template-source detection, and connector checks. Commit,
 push, branch switching, merge, reset, and history rewrites are irreversible-or-destructive
 actions and stay gated everywhere, not just during kickoff. This paragraph is the canonical
-source for that rule; other docs point here instead of restating it.
+source for that rule; other docs point here instead of restating it. An explicit
+standing authorization satisfies the gate for its named scope; do not ask again
+for an action already covered. See Project-specific policy below.
 
 For repeated, asynchronous, or artifact-based review, use the checked-in
 `human-review-queue` skill to create a durable gate. Deploy its runtime only when a project
@@ -68,7 +72,9 @@ broadens the human-owned list above.
 When a human gate lives at an external link (review-queue page, approval page, PR review),
 **open the link in the default browser** and present it alongside — never leave the user to
 copy-paste a URL. Windows: `Start-Process <url>`; macOS: `open <url>`; Linux:
-`xdg-open <url>`. Opening a browser tab is local, not external contact.
+`xdg-open <url>`. Opening a browser tab is local, not external contact. If browser
+control is unavailable, state the limitation and provide the link; never claim the
+page was opened or approved.
 
 ## Evidence rule
 
@@ -126,3 +132,36 @@ not by re-dumping. Full conventions: `docs/agents/token-efficiency.md`.
 - Dates: ISO `YYYY-MM-DD`. This project is Windows-first: PowerShell commands primary,
   bash equivalents where useful.
 - Never commit secrets. `.env` and `client_secret*.json` stay local (see `.gitignore`).
+
+
+## Project-specific policy
+
+This section adds Music Histories context; it does not retire the template norms
+or the operational documents above. Explicit owner instructions take precedence.
+
+- **Authorities:** [project](docs/PROJECT.md), [system scope](docs/SCOPE.md),
+  [project index](docs/INDEX.md), [shared-record contract](records/README.md),
+  [source inventory](sources/SOURCE_INDEX.md), [decisions](docs/decisions.md),
+  [licensing](LICENSE.md), and [contribution guidance](CONTRIBUTING.md).
+- **Tracker:** [local work plan](docs/work-plan.md) is temporarily the sole task
+  tracker as recorded in PROJECT.md. Follow the issue-tracker conventions with
+  this explicit local-mode override; migrate once to GitHub Issues and retire
+  the local tracker when that migration is implemented. Do not run both.
+- **Git authority:** the owner granted standing authorization on 2026-11-16 for
+  routine commits, pushes, branch switching and review PRs. The 2026-11-16 restoration request
+  explicitly authorizes merging this restoration. Do not force-push, reset,
+  rewrite history or perform destructive merges without specific authorization.
+- **Publication:** the project is public/open source. Routine documentation,
+  framework, Course I metadata/manifests, and original production-code updates
+  are authorized. Raw manuscripts, prompts, PDFs, images and private source
+  locators remain excluded; keep them in ignored sources/raw/. Licenses do not
+  grant third-party rights or approve publication of excluded assets.
+- **Creative gates:** the owner approves design rules, exact copy and final
+  proofs. Every work item needs sources, a deliverable, acceptance criteria and
+  a reviewer. Preserve the exact Who’s Who puzzle grid/key; do not reconstruct
+  missing approved content or infer approval from a generated example.
+- **Source status:** source authority, retrieval, rights and approval are
+  separate. Record conflicts and unknowns; inherited template decisions are
+  operational history, not approvals of workbook content. Unapproved tone and
+  visual settings remain provisional. See [identity interview](docs/design/series-identity.md)
+  and the [Amadeus pilot](courses/course-i/amadeus/README.md).

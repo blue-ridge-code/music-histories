@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "courses": [
+    {
+      "course_id": "MH-C001",
+      "number": 1,
+      "title": "Music, Power & Memory",
+      "path": "course-i",
+      "editions": [
+        {
+          "edition_id": "MH-C001-working",
+          "path": "editions/working",
+          "status": "draft"
+        }
+      ]
+    }
+  ]
+}
