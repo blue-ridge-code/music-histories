@@ -27,7 +27,8 @@ unknown. Future courses, titles, chapters, and scope are open questions.
 ## Stakeholders and audience
 
 The primary learner is an adult using commute listening, evening film viewing,
-and short seated workbook sessions around work. Course I spans twenty weeks:
+and short seated workbook sessions around work. Typical workbook visits are
+5–15 minutes; longer activities span multiple visits. Course I spans twenty weeks:
 ten canonical films, with optional exploratory films in the off weeks. The course
 is highly self-directed, using exposure, recall, scaffolding and accumulating
 layers of meaning. Waypoints invite recollection, not tests or rubrics.

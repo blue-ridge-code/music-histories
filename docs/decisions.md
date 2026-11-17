@@ -598,3 +598,18 @@ Revisit when: Pilot experience reveals workload/friction or the owner revises ou
 
 D-021 is reserved for the separate stable-link implementation in PR #2; this
 learning-design branch does not duplicate or supersede that decision.
+
+## D-023 | 2026-11-17 | Design for short, resumable workbook visits
+Status: approved for the time preference; exact pause/resume cues remain proposed.
+Owner: project owner.
+Evidence:
+  - Learning design: [learning-design.md](learning-design.md)
+  - Owner update: [S16 addendum](../sources/SOURCE_INDEX.md)
+Context: The owner refined the typical workbook visit to 5–15 minutes and asked
+that longer activities be considered over multiple visits.
+Decision: Design short visits and break longer activities into resumable encounters,
+without timed assessment or requiring a longer sitting. This refines D-022's
+previously open effort budget; it does not replace its learning approach.
+Consequences: Propose natural pause points and return cues; pilot their usability.
+The target concerns seated workbook use, not the duration of films or listening.
+Revisit when: Pilot experience or owner preference suggests a different rhythm.

@@ -1,5 +1,9 @@
 # Music Histories source inventory
 
+S16 addendum · 2026-11-17 owner direction: typical workbook visits are 5–15
+minutes; longer activities should be considered over multiple visits. This is a
+design preference, not a mandatory timer or a limit on optional exploration.
+
 S16 · Owner's audience, cadence, outcomes and learning-method answers in this chat
 (recorded 2026-11-16). Authority: confirmed project direction. Ten canonical films
 over twenty weeks supersedes the initial six-month horizon. Highly self-directed

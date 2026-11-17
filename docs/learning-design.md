@@ -6,7 +6,11 @@ Audience: an adult learning independently around work and everyday life.
 Course rhythm: **ten canonical films over twenty weeks**, one two-week cycle per
 film, with optional exploratory films for off weeks. This replaces the earlier
 six-month horizon. Commute listening prepares encounters with the films; short
-seated workbook sessions fit breaks and evenings. Before/Inside/Beside/After/Bridge
+seated workbook sessions fit breaks and evenings. A typical workbook visit is
+**5–15 minutes** (owner direction, 2026-11-17). Longer activities should unfold
+over multiple visits rather than require a longer sitting. This is a design
+target, not a timed task or a limit on chosen exploration.
+Before/Inside/Beside/After/Bridge
 roles still govern individual selections: not all listening must precede the film.
 
 The experience is highly self-directed. Use exposure, recall, scaffolding and
@@ -88,10 +92,18 @@ equally well supported. Never withhold useful help to enforce a recall attempt.
 
 ## Waypoints: private invitations, not assessment stations
 
+Keep each visit worthwhile on its own. For a longer activity, propose natural
+pause points and a brief “next time” cue so the learner can stop without losing
+their place. Allow a small trace—a phrase, mark or bookmarked passage—to support
+returning; do not require the learner to restart. Multiple visits should add
+meaning rather than repeat setup. These are authoring implications of the owner's
+time preference; exact activity segmentation still needs pilot review.
+
 Proposed placement: a short entry bookmark, a small chapter-end recall invitation,
 an optional midpoint return near week 10, and a closing return near week 20.
 Longer cross-chapter connections should replace other work rather than accumulate.
-Exact frequency and effort remain pilot questions, not research-prescribed numbers.
+Exact frequency remains a pilot question. The typical 5–15-minute visit is the
+owner's design preference, not a research-prescribed optimum or a completion timer.
 
 Example invitations, all provisional:
 
@@ -144,7 +156,8 @@ page-type comparison before full-chapter production.
 ## Next authoring decisions
 
 Map a small set of recurring threads and waypoint returns onto the ten chapters;
-confirm a manageable seated-session budget; then apply the pattern to the pilot.
+design natural stopping/resumption points within typical 5–15-minute visits;
+then apply the pattern to the pilot.
 Before any learner study, obtain the owner's approval for recruitment, consent,
 and participant-data handling. No tracking system or personal-data collection is
 needed to author the course. Personal recollections are not project telemetry.

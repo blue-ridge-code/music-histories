@@ -11,8 +11,9 @@ Acceptance: ten canonical films with optional off-week viewing; listening works
 without workbook access; exposure, spaced recall and optional scaffolds support
 all four outcomes; no learner tests, rubrics or progression gates; evidence and
 course-design inferences separated; exact page copy remains subject to approval.
-Next: choose a seated-session effort budget and map a few recurring threads and
-revisits across chapters, then apply them to the three-page pilot.
+Owner update 2026-11-17: typical visits are 5–15 minutes; longer activities unfold
+over multiple visits. Next: map recurring threads/revisits and natural pause/resume
+points, then apply them to the three-page pilot.
 
 2026-11-16 governance update: D-020 restores template operational instructions.
 GitHub API access is verified, but this work plan remains the explicit temporary
