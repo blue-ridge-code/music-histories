@@ -1,5 +1,19 @@
 # Local work plan
 
+## W12 · Review the first two listening contexts and streamline owner handoffs
+Status: source consideration and workflow instructions prepared. Reviewer: owner.
+Deliverable: [Gluck brief](../courses/course-i/amadeus/listening-01-gluck-brief.md#what-to-keep-from-the-capture),
+[Haydn brief](../courses/course-i/amadeus/listening-02-haydn-brief.md#what-to-keep-from-the-background),
+[handoff rules](agents/owner-handoffs.md#handoff-format), and
+[precise next-action navigation](owner-next-steps.md#next-action).
+Sources: S17–S25; S06 listening assignments. Acceptance: private capture preserved;
+publisher metadata distinguished from AI claims; aria scope unchanged; no imported
+prompt followed; no raw/account data published; owner gets file and exact-step
+links only when work is actually needed. Agent follow-up: version-matched text,
+translation/source rights and the selected video's excerpt boundaries; accessible
+Haydn score/early anecdote source and exact recording metadata. Do not ask the
+owner to download blocked sources while supported alternatives remain to explore.
+
 2026-11-16 governance update: D-020 restores template operational instructions.
 GitHub API access is verified, but this work plan remains the explicit temporary
 sole tracker until a one-time migration is implemented. The stable-link task is

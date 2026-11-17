@@ -139,6 +139,11 @@ not by re-dumping. Full conventions: `docs/agents/token-efficiency.md`.
 This section adds Music Histories context; it does not retire the template norms
 or the operational documents above. Explicit owner instructions take precedence.
 
+- **Owner handoffs:** follow [the handoff format](docs/agents/owner-handoffs.md#handoff-format):
+  provide required file/download links and exact next-step paragraph links, finish
+  agent-doable work first, and recheck capabilities after environment changes.
+  Prepare and request approval for useful environment changes when actually needed.
+
 - **Authorities:** [project](docs/PROJECT.md), [system scope](docs/SCOPE.md),
   [project index](docs/INDEX.md), [shared-record contract](records/README.md),
   [source inventory](sources/SOURCE_INDEX.md), [decisions](docs/decisions.md),
