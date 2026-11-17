@@ -1,5 +1,10 @@
 # Music Histories
 
+Course I is designed for **twenty weeks of self-directed adult learning**: ten
+canonical films, optional exploratory viewing, commute listening, and short
+workbook encounters. [Learning design](docs/learning-design.md) explains how
+exposure, recall, scaffolding and reflective waypoints build meaning over time.
+
 [System scope](docs/SCOPE.md) · [Course I shared records](courses/course-i/editions/working/README.md) ·
 [Record/versioning contract](records/README.md) · [New-edition template](templates/course-edition/README.md)
 

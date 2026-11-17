@@ -1,5 +1,9 @@
 # Project index
 
+Learner experience: [Course I learning design and research](learning-design.md).
+Authoring proposals: [twenty-week journey](../courses/course-i/learning-journey.md)
+and [Amadeus visit design](../courses/course-i/amadeus/visit-design.md).
+
 Reuse: [licenses](../LICENSE.md), [attribution](../ATTRIBUTION.md),
 [contributors](../CONTRIBUTORS.md), and [contribution guide](../CONTRIBUTING.md).
 
