@@ -12,8 +12,10 @@ without workbook access; exposure, spaced recall and optional scaffolds support
 all four outcomes; no learner tests, rubrics or progression gates; evidence and
 course-design inferences separated; exact page copy remains subject to approval.
 Owner update 2026-11-17: typical visits are 5–15 minutes; longer activities unfold
-over multiple visits. Next: map recurring threads/revisits and natural pause/resume
-points, then apply them to the three-page pilot.
+over multiple visits. [Journey map](../courses/course-i/learning-journey.md) and
+[pilot visit brief](../courses/course-i/amadeus/visit-design.md) are now drafted.
+Next: owner review of the proposed connections/visit paths; resolve the existing
+visual-identity, approved-copy and exact-asset prerequisites for the first page proof.
 
 2026-11-16 governance update: D-020 restores template operational instructions.
 GitHub API access is verified, but this work plan remains the explicit temporary

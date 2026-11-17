@@ -155,9 +155,12 @@ page-type comparison before full-chapter production.
 
 ## Next authoring decisions
 
-Map a small set of recurring threads and waypoint returns onto the ten chapters;
-design natural stopping/resumption points within typical 5–15-minute visits;
-then apply the pattern to the pilot.
+The [twenty-week journey](../courses/course-i/learning-journey.md) now proposes
+three recurring threads, chapter connections, optional-film placements and
+waypoint returns. The [Amadeus visit brief](../courses/course-i/amadeus/visit-design.md)
+applies the approach to pages 2, 11 and 9, with pause/resumption points.
+Review those proposals, then resolve the series-identity and source/copy gates
+needed to produce page 2. Neither document approves new manuscript wording.
 Before any learner study, obtain the owner's approval for recruitment, consent,
 and participant-data handling. No tracking system or personal-data collection is
 needed to author the course. Personal recollections are not project telemetry.

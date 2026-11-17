@@ -1,18 +1,22 @@
 # Page 2 — Who’s Who · production record
 
-Status: blocked on source recovery and series-identity decision.
+Status: authoring proposal prepared; blocked on series-identity, approved-copy
+confirmation and exact puzzle-asset verification before final page production.
 Reviewer: project owner; agent editorial/production reviewers remain unassigned.
 Source IDs: S00, S02, S04, S07–S09, S11–S12, S14.
 Target: one proofed page, not a full-chapter redesign.
+
+The [visit-design brief](visit-design.md) proposes 5–15-minute encounters and
+natural stopping/resumption points. It does not change the manuscript or grid.
 
 ## Gates and required evidence
 
 | Stage | Deliverable and acceptance | Approval / current evidence |
 |---|---|---|
-| Recover | Exact approved page copy, existing puzzle grid and answer key, both prototypes; filenames, hashes, versions and approval evidence | Not retrieved |
+| Recover | Exact approved page copy, existing puzzle grid and answer key, both prototypes; filenames, hashes, versions and approval evidence | Manuscript v0.1 and both PDFs recovered; exact reusable grid/key and final manuscript approval still need verification |
 | Design brief | Apply candidate series identity; explicitly list Amadeus/chapter variation and print specifications | Pending owner interview |
 | Research/activity | Cited historical and musical brief; explain what the learner notices, how they act, and why the activity earns space | Not begun |
-| Copy | Exact page text including headings, labels, instructions, credits; test shorter instructions and theater cutaway's explanatory role | Await manuscript; preserve grid/key exactly |
+| Copy | Exact page text including headings, labels, instructions, credits; test shorter instructions and theater cutaway's explanatory role | Source draft inspected for visit design; approved revision unresolved; no replacement copy approved |
 | Editorial review | Accuracy, activity design, clarity, and print-fit findings; proposed edits and their disposition | Not begun; no approval implied |
 | Copy approval | Owner approves a specific version/hash of exact copy and puzzle asset | Required before image prompt |
 | Prompt | Whole-page prompt tied to approved copy, guide/version, exact grid asset, and print specifications | Not begun |

@@ -613,3 +613,22 @@ previously open effort budget; it does not replace its learning approach.
 Consequences: Propose natural pause points and return cues; pilot their usability.
 The target concerns seated workbook use, not the duration of films or listening.
 Revisit when: Pilot experience or owner preference suggests a different rhythm.
+
+## D-024 | 2026-11-17 | Propose a threaded course journey and resumable pilot visits
+Status: provisional — prepared at the owner's request to proceed; exact placements
+and page-level authoring still await review.
+Owner: project owner; draft prepared by agent.
+Evidence:
+  - Course journey: [learning-journey.md](../courses/course-i/learning-journey.md)
+  - Pilot visit design: [visit-design.md](../courses/course-i/amadeus/visit-design.md)
+  - Production gates: [page-02-production.md](../courses/course-i/amadeus/page-02-production.md)
+Context: Confirmed outcomes and time preferences needed an actionable content map
+without introducing tests, excess workbook load or a second task tracker.
+Decision: Propose three recurring threads across ten two-week film cycles, an
+optional extension queue, entry/midpoint/closing returns, and short resumable
+visits for the three pilot pages. Preserve the canonical order and media roles.
+Consequences: Names remain connected to works/roles; musical expectations are
+developed against actual excerpts rather than assigned a universal form. Keep
+the Commendatore page sparse. Verify archival features and exact puzzle assets;
+no manuscript copy, artwork or final page is approved by this planning document.
+Revisit when: Owner review, verified musical analysis or the pilot reveals friction.
