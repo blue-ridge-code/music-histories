@@ -1,5 +1,19 @@
 # Local work plan
 
+## W10 · Design the self-directed learning journey
+Status: owner direction recorded; detailed authoring pattern proposed. Reviewer: owner.
+Deliverable: [learning design](learning-design.md), four learner outcomes, recurring
+learning threads and waypoint plan for Course I's twenty-week rhythm.
+Sources: S16 (owner's audience, cadence, outcomes and learning-method direction);
+private research register retained under sources/raw/learning-research-2026-11-16/;
+public research pointers in the learning design.
+Acceptance: ten canonical films with optional off-week viewing; listening works
+without workbook access; exposure, spaced recall and optional scaffolds support
+all four outcomes; no learner tests, rubrics or progression gates; evidence and
+course-design inferences separated; exact page copy remains subject to approval.
+Next: choose a seated-session effort budget and map a few recurring threads and
+revisits across chapters, then apply them to the three-page pilot.
+
 2026-11-16 governance update: D-020 restores template operational instructions.
 GitHub API access is verified, but this work plan remains the explicit temporary
 sole tracker until a one-time migration is implemented. The stable-link task is

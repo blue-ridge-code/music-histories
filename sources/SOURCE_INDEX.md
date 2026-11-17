@@ -1,5 +1,13 @@
 # Music Histories source inventory
 
+S16 · Owner's audience, cadence, outcomes and learning-method answers in this chat
+(recorded 2026-11-16). Authority: confirmed project direction. Ten canonical films
+over twenty weeks supersedes the initial six-month horizon. Highly self-directed
+exposure/recall/scaffolding/layered meaning; waypoints are not tests or rubrics.
+See [learning design](../docs/learning-design.md). Precise private research
+provenance is retained under ignored sources/raw/learning-research-2026-11-16/;
+public documents cite the underlying literature without private repository links.
+
 S15 · Owner's 2026-11-16 request and preceding scoping discussion in this chat:
 record the system scope and prepare reusable shared records for Course I and
 future course versions. Authority: explicit task instruction; publication remains

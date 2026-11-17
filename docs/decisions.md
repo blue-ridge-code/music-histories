@@ -573,3 +573,28 @@ and authenticated repository access are now verified; this does not establish
 every administration scope. Unfinished stable-link edits are excluded from this
 restoration commit and merge. Browser-unavailable cases report their limitation.
 Revisit when: Template workflow changes, tracker migration, or new owner scope approval.
+
+## D-022 | 2026-11-16 | Define Course I as a self-directed twenty-week learning journey
+Status: approved for owner-confirmed audience, cadence, outcomes and method;
+specific waypoint wording, placement and effort budgets remain proposed.
+Owner: project owner.
+Evidence:
+  - Learning design and research boundaries: [learning-design.md](learning-design.md)
+  - Owner answers: [S16](../sources/SOURCE_INDEX.md)
+Context: The owner specified adult learning around commutes/work, revised the
+horizon to ten canonical films over twenty weeks, named four outcomes and chose
+exposure, recall, scaffolding and added layers of meaning without tests/rubrics.
+Decision: Support interpretation of film/music/culture, musical discrimination
+and historical/pop-cultural connections, people-to-work relationships, and
+anticipation of musical structure. Use optional private recall and returns with
+accessible hints/notes, not scores, mastery gates or a compulsory review schedule.
+Consequences: Preserve correct facts and production review without assessing the
+learner. Before/Inside/Beside/After/Bridge roles remain; commute use does not move
+all assignments before viewing. Exact scheduling is a course-design hypothesis,
+not an empirically established optimum. Research from a private owner-authorized
+repository is retained locally; no source copies/private links are published.
+No manuscript/puzzle changes or learner-data collection are approved by this entry.
+Revisit when: Pilot experience reveals workload/friction or the owner revises outcomes.
+
+D-021 is reserved for the separate stable-link implementation in PR #2; this
+learning-design branch does not duplicate or supersede that decision.

@@ -9,8 +9,8 @@ This working edition ID is new repository metadata, not a version claimed by Dri
 | [Films](records/films.csv) | 10 core films in source order, 6 extensions |
 | [Listening](records/listening.csv) | 60 source-curated selections, exact manual overrides retained |
 | [Chapters/pages](records/chapters-pages.csv) | 10 chapter records and 14 intended Amadeus pages |
-| [Sources/rights](records/sources-rights.csv) | 10 recovered files, 2 owner requests and 3 unresolved source/asset records |
-| [Decisions](records/decisions.csv) | Manuscript approval conflict and recovered composition-first direction |
+| [Sources/rights](records/sources-rights.csv) | 10 recovered files, 3 owner requests and 3 unresolved source/asset records |
+| [Decisions](records/decisions.csv) | Manuscript approval conflict, recovered composition-first direction and confirmed learning approach |
 
 [Edition metadata](edition.json) · [Contract](../../../../records/README.md) ·
 [Scope](../../../../docs/SCOPE.md)

@@ -1,5 +1,7 @@
 # Project index
 
+Learner experience: [Course I learning design and research](learning-design.md).
+
 Reuse: [licenses](../LICENSE.md), [attribution](../ATTRIBUTION.md),
 [contributors](../CONTRIBUTORS.md), and [contribution guide](../CONTRIBUTING.md).
 
