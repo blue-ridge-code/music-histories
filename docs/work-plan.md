@@ -1,7 +1,7 @@
 # Local work plan
 
 ## W12 · Review the first two listening contexts and streamline owner handoffs
-Status: source consideration and workflow instructions prepared. Reviewer: owner.
+Status: private supplemental copy proof v0.2 ready for owner review. Reviewer: owner.
 Deliverable: [Gluck brief](../courses/course-i/amadeus/listening-01-gluck-brief.md#what-to-keep-from-the-capture),
 [Haydn brief](../courses/course-i/amadeus/listening-02-haydn-brief.md#what-to-keep-from-the-background),
 [handoff rules](agents/owner-handoffs.md#handoff-format), and
@@ -13,6 +13,13 @@ links only when work is actually needed. Agent follow-up: version-matched text,
 translation/source rights and the selected video's excerpt boundaries; accessible
 Haydn score/early anecdote source and exact recording metadata. Do not ask the
 owner to download blocked sources while supported alternatives remain to explore.
+
+Update: [source checks](listening-verification.md#what-is-now-established) now include
+the identified Gluck text and inspected early Haydn biographies. A new working
+translation and two notes received separate editorial review and a checked PDF
+proof. [Owner next step](owner-next-steps.md#review-draft-listening-notes) is copy
+review only. Exact video offsets, Haydn score analysis and release metadata are
+not asserted; those remain agent-owned research rather than owner tasks.
 
 2026-11-16 governance update: D-020 restores template operational instructions.
 GitHub API access is verified, but this work plan remains the explicit temporary

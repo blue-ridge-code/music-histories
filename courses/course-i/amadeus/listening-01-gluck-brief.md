@@ -68,12 +68,13 @@ capture's prompts. Access checked 2026-11-17.
 
 ## Next agent step: verify text and excerpt
 
-Locate a reliable, version-matched Italian text and establish its reuse basis;
-prepare any English translation as a separately attributed/identified work.
-Verify the selected upload's aria boundaries against the recording rather than
-treating the 4:28 album duration as an offset. Then draft a short contextual note
-and optional glossary/listening invitation with exact source references for
-owner review. No owner download is a prerequisite to that work.
+Update 2026-11-17: a transcription identified with Vienna 1762 and its Act III
+aria No. 37 were located and inspected. A new English working translation and
+short supplemental note are in private copy proof v0.2, separately reviewed.
+See [source checks and the copy record](../../../docs/listening-verification.md#gluck-text-and-recording-context)
+and [the owner's next review step](../../../docs/owner-next-steps.md#review-draft-listening-notes).
+The selected upload's boundaries remain agent-owned verification; do not treat
+the 4:28 album duration as an offset. No existing manuscript copy is replaced.
 
 The critical-edition project's site returned HTTP 503 with a one-hour Retry-After
 during this pass. That is a service response, not evidence that more credentials

@@ -37,8 +37,8 @@ Keep the owner's story as a lead for research, not proof of every dramatic detai
 |---|---|
 | Ensemble founded in 1953 by Nikolaus and Alice Harnoncourt | Confirmed in the ensemble's own founders/history page; credit Alice's contribution rather than reducing the ensemble to one founder |
 | Players leave until two violins remain | Supported by the consulted secondary work account; score/recording-specific verification remains before detailed musical copy |
-| The prince's exact words | Not verified. Do not print the supplied sentence as an authenticated quotation |
-| The historical incident | Present as a reported story, not a contemporary transcript. The consulted secondary account traces it to Haydn's later recollections to Dies and Griesinger; the early biographies still need direct consultation |
+| The prince's exact words | The supplied English sentence is not verified. Dies 1810 p.47 prints a different reported utterance; neither is an authenticated contemporary transcript |
+| The historical incident | Early-source scans now inspected: Griesinger 1810 pp.28–29 and Dies 1810 p.47. They report later recollections and differ in detail. The draft attributes its account to Griesinger rather than smoothing them together |
 | Every group gets a solo before leaving | Do not retain this universal claim. The secondary account distinguishes some departures without solos; verify the score before describing an exact exit order |
 | The final two violins play in unison | Not established in this pass. Do not use unison as a synonym for two players together; prefer two remaining violins until their actual parts are checked |
 | Key changes, precise formal labels and instrument departure order | Secondary description is available, but a directly inspected score/selected recording is needed before turning these into analytical instructions |
@@ -52,11 +52,14 @@ that response, and the owner is not asked to download the score on our behalf.
 
 ## Next agent step: establish the source basis
 
-Find an accessible, attributable score edition and inspect the finale; consult
-an early account of the anecdote and verify the exact curated recording metadata.
-Then prepare a short listening note with the musical observations separated from
-the historical story. Keep precise exit-order/timing claims out until checked.
-Do not switch the existing recording or enlarge the finale assignment.
+Update 2026-11-17: early biography scans were located and inspected, and a short
+new note was drafted with the social story attributed to a later account. Private
+copy proof v0.2 has separate editorial review; see
+[the source distinction](../../../docs/listening-verification.md#haydn-story-early-accounts-not-a-reconstructed-transcript)
+and [the owner's next review step](../../../docs/owner-next-steps.md#review-draft-listening-notes).
+Score/part analysis and exact curated-recording metadata remain agent-owned work.
+The draft omits the supplied quotation, unison, precise exit order and timing.
+The existing recording and finale assignment are unchanged.
 
 This source brief and the [Gluck brief](listening-01-gluck-brief.md#what-to-keep-from-the-capture)
 are original consideration documents. They do not change approved page copy,

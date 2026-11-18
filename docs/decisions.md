@@ -597,3 +597,28 @@ a full libretto. The Haydn score download was blocked, not inspected or fabricat
 Revisit when: Owner workflow preferences, access capabilities or source review changes.
 
 D-021–D-024 are reserved for the separate stable-link and learning-design PRs.
+
+## D-026 | 2026-11-17 | Prepare source-grounded supplemental listening copy for review
+Status: provisional — source checks completed within documented limits; new notes
+and working translation await owner copy approval.
+Owner: project owner.
+Evidence:
+  - Source findings: [listening-verification.md](listening-verification.md#what-is-now-established)
+  - Exact owner step: [review paragraph](owner-next-steps.md#review-draft-listening-notes)
+  - Private artifact identity: [v0.2 record](listening-verification.md#private-copy-proof-v02)
+Context: The owner requested implementation of the remaining verification and
+drafting steps for the first two selections, with agent-first work and precise
+links rather than requests to download sources or navigate long documents.
+Decision: Inspect the identified Gluck text, create a new working English
+translation, inspect early Haydn biography scans, and prepare short new notes
+with optional layers. Keep the selected recordings/assignments and existing
+chapter manuscript unchanged. Omit unsupported detailed musical/timing claims.
+Consequences: A separate editorial review and four-page copy proof are complete.
+Refinements to translation phrasing, attribution, link navigation and typography
+are applied in v0.2. The PDF and editable bundle remain private and ignored;
+public documentation records sources, limits, artifact hashes and the copy-review
+decision. A private validated owner gate LSN-COPY-002 has dispatch disabled;
+the unavailable desktop UI uses the file/chat fallback. No response is invented
+and no public service is deployed. No special environment change or owner source
+hunt is required now.
+Revisit when: Owner edits/approval, improved score/recording evidence, or artifact regeneration.

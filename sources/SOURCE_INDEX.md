@@ -100,3 +100,21 @@ Private snapshots, original locations and hashes are in ignored
 sources/raw/2026-11-17-haydn-intake/intake-register.json. Keep the owner's story
 as a lead; do not publish the prince's words as a verified quotation, the exact
 instrument departure order, or an unison claim without establishing the evidence.
+
+## S26–S30 · Follow-up text and early-history verification · 2026-11-17
+
+| ID | Source | Location and verification |
+|---|---|---|
+| S26 | Libretti d'opera Italiani work/version entry | Gluck/Calzabigi, Vienna 1762 identification; public URL in the source-check record |
+| S27 | Same site's Act III text, aria No. 37 | Italian passage inspected, opening couplet's printed return checked; underlying eighteenth-century libretto is public domain; modern editorial material not copied |
+| S28 | Griesinger, Biographische Notizen über Joseph Haydn (1810), printed p.28 | Archive scan inspected; later recollection, musicians' extended stay and departures |
+| S29 | Same book, printed p.29 | Scan inspected; next-day departure order and explicit attribution of the story to Haydn; no prince dialogue |
+| S30 | Dies, Biographische Nachrichten von Joseph Haydn (1810), p.47 | Scan inspected; different reported prince wording and staging details; not an authenticated contemporary transcript or orchestration source |
+
+Exact public passage/page links are in
+[the verification record](../docs/listening-verification.md#what-is-now-established).
+Bytes/hashes and immutable local snapshots are retained in ignored
+sources/raw/2026-11-17-listening-verification/source-register.json.
+The new private copy proof and editable bundle have a separate
+[artifact/version record](../docs/listening-verification.md#private-copy-proof-v02).
+Neither source review nor a generated proof implies owner approval of new copy.
