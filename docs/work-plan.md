@@ -1,18 +1,21 @@
 # Local work plan
 
-## W09 · Maintain stable film and listening links
-Status: implementation prepared for review; deployment pending. Reviewer: owner.
-Deliverable: [resolver and operations](../links/README.md), registry seeded from
-Course I, country filtering, update/report form, weekly HTTP observation workflow.
-Sources: owner's stable-link request, Course I manifests, D-021.
-Acceptance: unchanged printed IDs; editable public destinations; same recording
-versus explicit alternatives; saved country choice and exclusions; unknown/dead
-destination behavior; safe registry validation and routing/browser checks; no
-claims of playback/rights from HTTP status; verified hosting before printed use.
-Evidence: scripts/tests/test_link_registry.py, scripts/tests/link-routing.test.mjs.
-
-Restoration update: PR #1 is merged. The earlier stable-link pause is lifted;
-its implementation remains a separate change from the governance merge.
+## W10 · Design the self-directed learning journey
+Status: owner direction recorded; detailed authoring pattern proposed. Reviewer: owner.
+Deliverable: [learning design](learning-design.md), four learner outcomes, recurring
+learning threads and waypoint plan for Course I's twenty-week rhythm.
+Sources: S16 (owner's audience, cadence, outcomes and learning-method direction);
+private research register retained under sources/raw/learning-research-2026-11-16/;
+public research pointers in the learning design.
+Acceptance: ten canonical films with optional off-week viewing; listening works
+without workbook access; exposure, spaced recall and optional scaffolds support
+all four outcomes; no learner tests, rubrics or progression gates; evidence and
+course-design inferences separated; exact page copy remains subject to approval.
+Owner update 2026-11-17: typical visits are 5–15 minutes; longer activities unfold
+over multiple visits. [Journey map](../courses/course-i/learning-journey.md) and
+[pilot visit brief](../courses/course-i/amadeus/visit-design.md) are now drafted.
+Next: owner review of the proposed connections/visit paths; resolve the existing
+visual-identity, approved-copy and exact-asset prerequisites for the first page proof.
 
 2026-11-16 governance update: D-020 restores template operational instructions.
 GitHub API access is verified, but this work plan remains the explicit temporary
@@ -105,3 +108,17 @@ Sources: S00; GitHub page verified public on 2026-11-13.
 Acceptance: public/private direction, allowed files/links/assets and exclusions
 recorded; inspect Git diff and staged paths against scope; PR only after approval.
 Changing visibility or making the repo private does not itself approve asset publication.
+
+## W09 · Maintain stable film and listening links
+Status: implementation prepared for review; deployment pending. Reviewer: owner.
+Deliverable: [resolver and operations](../links/README.md), registry seeded from
+Course I, country filtering, update/report form, weekly HTTP observation workflow.
+Sources: owner's stable-link request, Course I manifests, D-021.
+Acceptance: unchanged printed IDs; editable public destinations; same recording
+versus explicit alternatives; saved country choice and exclusions; unknown/dead
+destination behavior; safe registry validation and routing/browser checks; no
+claims of playback/rights from HTTP status; verified hosting before printed use.
+Evidence: scripts/tests/test_link_registry.py, scripts/tests/link-routing.test.mjs.
+
+Restoration update: PR #1 is merged. The earlier stable-link pause is lifted;
+its implementation remains a separate change from the governance merge.

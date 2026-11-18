@@ -14,3 +14,4 @@ S13,Separately linked performance manifest,,,,,,,not_identified_in_package,unkno
 S14,Exact reusable puzzle grid and answer key,,,,,,,prototype_evidence_recovered_asset_unverified,preserve_existing,not_assessed,,,not_authorized,project_owner,S11;S12
 A-CONCEPT-001,Original generated concept mockups,,,,,,,missing_from_package,preferred_compositions_reported,not_assessed,,,not_authorized,project_owner,S04#Chapter Continuity
 S15,"Owner scope and shared-record framework request, 2026-11-16",,,,,,,chat_record,owner_instruction,not_assessed,,,not_authorized,project_owner,sources/SOURCE_INDEX.md
+S16,"Owner audience, twenty-week cadence, learning outcomes and method direction",,,,,,,chat_record,owner_instruction,not_assessed,,,not_authorized,project_owner,docs/learning-design.md

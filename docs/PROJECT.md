@@ -26,7 +26,16 @@ unknown. Future courses, titles, chapters, and scope are open questions.
 
 ## Stakeholders and audience
 
-Adult learners are the audience. The project owner is the final reviewer for
+The primary learner is an adult using commute listening, evening film viewing,
+and short seated workbook sessions around work. Typical workbook visits are
+5–15 minutes; longer activities span multiple visits. Course I spans twenty weeks:
+ten canonical films, with optional exploratory films in the off weeks. The course
+is highly self-directed, using exposure, recall, scaffolding and accumulating
+layers of meaning. Waypoints invite recollection, not tests or rubrics.
+The [learning design](learning-design.md) records the four owner-defined outcomes,
+research provenance, support choices and provisional waypoint examples.
+
+The project owner is the final reviewer for
 scope, series identity, copy, print proofs, and publication. Agent editorial
 review is advisory; no outside reviewer has been appointed.
 
