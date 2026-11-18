@@ -1,5 +1,17 @@
 # Music Histories source inventory
 
+S16 addendum · 2026-11-17 owner direction: typical workbook visits are 5–15
+minutes; longer activities should be considered over multiple visits. This is a
+design preference, not a mandatory timer or a limit on optional exploration.
+
+S16 · Owner's audience, cadence, outcomes and learning-method answers in this chat
+(recorded 2026-11-16). Authority: confirmed project direction. Ten canonical films
+over twenty weeks supersedes the initial six-month horizon. Highly self-directed
+exposure/recall/scaffolding/layered meaning; waypoints are not tests or rubrics.
+See [learning design](../docs/learning-design.md). Precise private research
+provenance is retained under ignored sources/raw/learning-research-2026-11-16/;
+public documents cite the underlying literature without private repository links.
+
 S15 · Owner's 2026-11-16 request and preceding scoping discussion in this chat:
 record the system scope and prepare reusable shared records for Course I and
 future course versions. Authority: explicit task instruction; publication remains
@@ -82,8 +94,8 @@ All four raw snapshots, source URLs where public, byte counts and SHA-256 hashes
 are recorded in ignored sources/raw/2026-11-17-gluck-intake/intake-register.json.
 See [the verified-versus-unverified review](../courses/course-i/amadeus/listening-01-gluck-brief.md#what-the-publisher-confirms).
 
-S16 is reserved for the separate learning-design work in PR #3; these IDs do not
-replace its owner-direction record.
+S16 records the learning-design owner direction from merged PR #3; these later
+intake IDs preserve that record.
 
 ## S22–S25 · Haydn second-listening intake · 2026-11-17
 

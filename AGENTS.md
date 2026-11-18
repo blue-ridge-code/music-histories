@@ -165,6 +165,10 @@ or the operational documents above. Explicit owner instructions take precedence.
   proofs. Every work item needs sources, a deliverable, acceptance criteria and
   a reviewer. Preserve the exact Who’s Who puzzle grid/key; do not reconstruct
   missing approved content or infer approval from a generated example.
+- **Learning:** follow the [Course I learning design](docs/learning-design.md).
+  Build self-directed exposure, recall, scaffolding and layered meaning. Learner
+  waypoints are invitations, not tests or rubrics. Keep proposed examples distinct
+  from approved manuscript copy; internal quality review is still required.
 - **Source status:** source authority, retrieval, rights and approval are
   separate. Record conflicts and unknowns; inherited template decisions are
   operational history, not approvals of workbook content. Unapproved tone and

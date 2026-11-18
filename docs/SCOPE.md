@@ -45,6 +45,13 @@ the film. A recording container (opera, act, album) is not the assigned excerpt.
 
 ## Workbook
 
+For Course I, use the owner-confirmed [learning design](learning-design.md): ten
+canonical films over twenty weeks, with optional exploratory films in off weeks,
+commute listening and short seated workbook encounters. Build repeated exposure,
+recall, scaffolding and deeper connections across chapters. Learner waypoints
+are private invitations to remember and reconsider, not tests, grades or rubrics.
+This cadence is Course I's plan, not a mandatory duration for every future course.
+
 Provide course introduction/navigation; one chapter per core film; course synthesis
 and further exploration. Activities may invite noticing, listening, drawing,
 comparing, questioning, making, or reflecting. Not every selection needs its own

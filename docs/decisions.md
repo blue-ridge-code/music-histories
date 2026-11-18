@@ -574,6 +574,64 @@ every administration scope. Unfinished stable-link edits are excluded from this
 restoration commit and merge. Browser-unavailable cases report their limitation.
 Revisit when: Template workflow changes, tracker migration, or new owner scope approval.
 
+## D-022 | 2026-11-16 | Define Course I as a self-directed twenty-week learning journey
+Status: approved for owner-confirmed audience, cadence, outcomes and method;
+specific waypoint wording, placement and effort budgets remain proposed.
+Owner: project owner.
+Evidence:
+  - Learning design and research boundaries: [learning-design.md](learning-design.md)
+  - Owner answers: [S16](../sources/SOURCE_INDEX.md)
+Context: The owner specified adult learning around commutes/work, revised the
+horizon to ten canonical films over twenty weeks, named four outcomes and chose
+exposure, recall, scaffolding and added layers of meaning without tests/rubrics.
+Decision: Support interpretation of film/music/culture, musical discrimination
+and historical/pop-cultural connections, people-to-work relationships, and
+anticipation of musical structure. Use optional private recall and returns with
+accessible hints/notes, not scores, mastery gates or a compulsory review schedule.
+Consequences: Preserve correct facts and production review without assessing the
+learner. Before/Inside/Beside/After/Bridge roles remain; commute use does not move
+all assignments before viewing. Exact scheduling is a course-design hypothesis,
+not an empirically established optimum. Research from a private owner-authorized
+repository is retained locally; no source copies/private links are published.
+No manuscript/puzzle changes or learner-data collection are approved by this entry.
+Revisit when: Pilot experience reveals workload/friction or the owner revises outcomes.
+
+Historical allocation: D-021 belongs to the stable-link implementation in PR #2.
+
+## D-023 | 2026-11-17 | Design for short, resumable workbook visits
+Status: approved for the time preference; exact pause/resume cues remain proposed.
+Owner: project owner.
+Evidence:
+  - Learning design: [learning-design.md](learning-design.md)
+  - Owner update: [S16 addendum](../sources/SOURCE_INDEX.md)
+Context: The owner refined the typical workbook visit to 5–15 minutes and asked
+that longer activities be considered over multiple visits.
+Decision: Design short visits and break longer activities into resumable encounters,
+without timed assessment or requiring a longer sitting. This refines D-022's
+previously open effort budget; it does not replace its learning approach.
+Consequences: Propose natural pause points and return cues; pilot their usability.
+The target concerns seated workbook use, not the duration of films or listening.
+Revisit when: Pilot experience or owner preference suggests a different rhythm.
+
+## D-024 | 2026-11-17 | Propose a threaded course journey and resumable pilot visits
+Status: provisional — prepared at the owner's request to proceed; exact placements
+and page-level authoring still await review.
+Owner: project owner; draft prepared by agent.
+Evidence:
+  - Course journey: [learning-journey.md](../courses/course-i/learning-journey.md)
+  - Pilot visit design: [visit-design.md](../courses/course-i/amadeus/visit-design.md)
+  - Production gates: [page-02-production.md](../courses/course-i/amadeus/page-02-production.md)
+Context: Confirmed outcomes and time preferences needed an actionable content map
+without introducing tests, excess workbook load or a second task tracker.
+Decision: Propose three recurring threads across ten two-week film cycles, an
+optional extension queue, entry/midpoint/closing returns, and short resumable
+visits for the three pilot pages. Preserve the canonical order and media roles.
+Consequences: Names remain connected to works/roles; musical expectations are
+developed against actual excerpts rather than assigned a universal form. Keep
+the Commendatore page sparse. Verify archival features and exact puzzle assets;
+no manuscript copy, artwork or final page is approved by this planning document.
+Revisit when: Owner review, verified musical analysis or the pilot reveals friction.
+
 ## D-025 | 2026-11-17 | Make owner handoffs precise and agent-first
 Status: approved for the owner's workflow direction; Gluck/Haydn teaching content remains consideration.
 Owner: project owner.
@@ -595,8 +653,6 @@ Gluck aria and Haydn finale remain unchanged; optional exploration and unverifie
 claims remain separate. The verified Gluck publisher PDF is a product sheet, not
 a full libretto. The Haydn score download was blocked, not inspected or fabricated.
 Revisit when: Owner workflow preferences, access capabilities or source review changes.
-
-D-021–D-024 are reserved for the separate stable-link and learning-design PRs.
 
 ## D-026 | 2026-11-17 | Prepare source-grounded supplemental listening copy for review
 Status: provisional — source checks completed within documented limits; new notes
