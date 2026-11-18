@@ -1,0 +1,39 @@
+name: Report or update a film or listening link
+description: Help maintain a stable Music Histories link in your country.
+title: "Update source for "
+body:
+  - type: input
+    id: resource_id
+    attributes:
+      label: Stable resource ID
+      placeholder: MH-C001-L005
+    validations:
+      required: true
+  - type: input
+    id: destination_id
+    attributes:
+      label: Destination ID, if known
+  - type: input
+    id: country
+    attributes:
+      label: Country where checked
+      description: Country name or ISO two-letter code; no address or precise location needed.
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What needs updating?
+      options:
+        - Link removed or broken
+        - Unavailable in this country
+        - Login, subscription or payment required
+        - Wrong performance, edition or excerpt
+        - Suggest another legal publication
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Observation and proposed replacement
+      description: Include date, service, public URL, access cost, and whether it is the exact film/recording or an alternative. Do not post private account links or credentials.
+    validations:
+      required: true

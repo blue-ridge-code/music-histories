@@ -1,1 +1,1 @@
-film_id,course_id,edition_id,chapter_id,sequence,selection_type,title,release_year,story_anchor,place,functions,relationship,selection_rationale,carry_question,bridge,source_status,approval_status,availability_status,availability_checked_on,reviewer,source_refs
+film_id,course_id,edition_id,chapter_id,sequence,selection_type,title,release_year,story_anchor,place,functions,relationship,selection_rationale,carry_question,bridge,source_status,approval_status,availability_status,availability_checked_on,reviewer,source_refs,stable_link_id

@@ -66,9 +66,10 @@ publication. Other human gates remain in AGENTS.md.
 Implementation-ready applies to the specifically requested course-record and
 stable-link production tooling, authorized by the owner on 2026-11-16. This records
 the existing implementation requests, not a general approval of workbook design
-or other product work. The stable-link implementation remains local and paused
-while this governance restoration is completed. No operational/deployment claim
-is made. Routine repository publication is authorized above.
+or other product work. Template governance was restored and merged in PR #1.
+The stable-link implementation proceeds on a separate branch; no live deployment
+is claimed until Pages is activated and its output is verified. Routine repository
+publication is authorized above.
 
 Workbook design remains in planning. The interview proceeds one consequential
 question at a time: answer, challenge, researched precedent, candidate rule,

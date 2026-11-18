@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "course_id": "REPLACE_COURSE_ID",
   "edition_id": "REPLACE_EDITION_ID",
   "edition_key": "working",

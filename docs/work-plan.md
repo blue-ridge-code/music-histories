@@ -108,3 +108,17 @@ Sources: S00; GitHub page verified public on 2026-11-13.
 Acceptance: public/private direction, allowed files/links/assets and exclusions
 recorded; inspect Git diff and staged paths against scope; PR only after approval.
 Changing visibility or making the repo private does not itself approve asset publication.
+
+## W09 · Maintain stable film and listening links
+Status: implementation prepared for review; deployment pending. Reviewer: owner.
+Deliverable: [resolver and operations](../links/README.md), registry seeded from
+Course I, country filtering, update/report form, weekly HTTP observation workflow.
+Sources: owner's stable-link request, Course I manifests, D-021.
+Acceptance: unchanged printed IDs; editable public destinations; same recording
+versus explicit alternatives; saved country choice and exclusions; unknown/dead
+destination behavior; safe registry validation and routing/browser checks; no
+claims of playback/rights from HTTP status; verified hosting before printed use.
+Evidence: scripts/tests/test_link_registry.py, scripts/tests/link-routing.test.mjs.
+
+Restoration update: PR #1 is merged. The earlier stable-link pause is lifted;
+its implementation remains a separate change from the governance merge.

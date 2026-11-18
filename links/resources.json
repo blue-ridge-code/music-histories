@@ -1,0 +1,1785 @@
+{
+  "schema_version": 1,
+  "resources": [
+    {
+      "id": "MH-C001-F001",
+      "kind": "film",
+      "title": "Amadeus",
+      "assignment": "Watch the film; consult the course for viewing guidance.",
+      "preferred_recording": "",
+      "source_refs": "S05#Core Films!A2:R2",
+      "retired": false,
+      "destinations": []
+    },
+    {
+      "id": "MH-C001-F002",
+      "kind": "film",
+      "title": "Chronicle of Anna Magdalena Bach",
+      "assignment": "Watch the film; consult the course for viewing guidance.",
+      "preferred_recording": "",
+      "source_refs": "S05#Core Films!A3:R3",
+      "retired": false,
+      "destinations": []
+    },
+    {
+      "id": "MH-C001-F003",
+      "kind": "film",
+      "title": "Mahler",
+      "assignment": "Watch the film; consult the course for viewing guidance.",
+      "preferred_recording": "",
+      "source_refs": "S05#Core Films!A4:R4",
+      "retired": false,
+      "destinations": []
+    },
+    {
+      "id": "MH-C001-F004",
+      "kind": "film",
+      "title": "The Blue Angel",
+      "assignment": "Watch the film; consult the course for viewing guidance.",
+      "preferred_recording": "",
+      "source_refs": "S05#Core Films!A5:R5",
+      "retired": false,
+      "destinations": []
+    },
+    {
+      "id": "MH-C001-F005",
+      "kind": "film",
+      "title": "Cabaret",
+      "assignment": "Watch the film; consult the course for viewing guidance.",
+      "preferred_recording": "",
+      "source_refs": "S05#Core Films!A6:R6",
+      "retired": false,
+      "destinations": []
+    },
+    {
+      "id": "MH-C001-F006",
+      "kind": "film",
+      "title": "The Sound of Music",
+      "assignment": "Watch the film; consult the course for viewing guidance.",
+      "preferred_recording": "",
+      "source_refs": "S05#Core Films!A7:R7",
+      "retired": false,
+      "destinations": []
+    },
+    {
+      "id": "MH-C001-F007",
+      "kind": "film",
+      "title": "The Third Man",
+      "assignment": "Watch the film; consult the course for viewing guidance.",
+      "preferred_recording": "",
+      "source_refs": "S05#Core Films!A8:R8",
+      "retired": false,
+      "destinations": []
+    },
+    {
+      "id": "MH-C001-F008",
+      "kind": "film",
+      "title": "Wings of Desire",
+      "assignment": "Watch the film; consult the course for viewing guidance.",
+      "preferred_recording": "",
+      "source_refs": "S05#Core Films!A9:R9",
+      "retired": false,
+      "destinations": []
+    },
+    {
+      "id": "MH-C001-F009",
+      "kind": "film",
+      "title": "The Piano Teacher",
+      "assignment": "Watch the film; consult the course for viewing guidance.",
+      "preferred_recording": "",
+      "source_refs": "S05#Core Films!A10:R10",
+      "retired": false,
+      "destinations": []
+    },
+    {
+      "id": "MH-C001-F010",
+      "kind": "film",
+      "title": "TÁR",
+      "assignment": "Watch the film; consult the course for viewing guidance.",
+      "preferred_recording": "",
+      "source_refs": "S05#Core Films!A11:R11",
+      "retired": false,
+      "destinations": []
+    },
+    {
+      "id": "MH-C001-F011",
+      "kind": "film",
+      "title": "Eroica",
+      "assignment": "Watch the film; consult the course for viewing guidance.",
+      "preferred_recording": "",
+      "source_refs": "S05#Extensions!A2:L2",
+      "retired": false,
+      "destinations": []
+    },
+    {
+      "id": "MH-C001-F012",
+      "kind": "film",
+      "title": "Immortal Beloved",
+      "assignment": "Watch the film; consult the course for viewing guidance.",
+      "preferred_recording": "",
+      "source_refs": "S05#Extensions!A3:L3",
+      "retired": false,
+      "destinations": []
+    },
+    {
+      "id": "MH-C001-F013",
+      "kind": "film",
+      "title": "The Magic Flute",
+      "assignment": "Watch the film; consult the course for viewing guidance.",
+      "preferred_recording": "",
+      "source_refs": "S05#Extensions!A4:L4",
+      "retired": false,
+      "destinations": []
+    },
+    {
+      "id": "MH-C001-F014",
+      "kind": "film",
+      "title": "Ludwig",
+      "assignment": "Watch the film; consult the course for viewing guidance.",
+      "preferred_recording": "",
+      "source_refs": "S05#Extensions!A5:L5",
+      "retired": false,
+      "destinations": []
+    },
+    {
+      "id": "MH-C001-F015",
+      "kind": "film",
+      "title": "Taking Sides",
+      "assignment": "Watch the film; consult the course for viewing guidance.",
+      "preferred_recording": "",
+      "source_refs": "S05#Extensions!A6:L6",
+      "retired": false,
+      "destinations": []
+    },
+    {
+      "id": "MH-C001-F016",
+      "kind": "film",
+      "title": "The Lives of Others",
+      "assignment": "Watch the film; consult the course for viewing guidance.",
+      "preferred_recording": "",
+      "source_refs": "S05#Extensions!A7:L7",
+      "retired": false,
+      "destinations": []
+    },
+    {
+      "id": "MH-C001-L001",
+      "kind": "listening",
+      "title": "Orfeo ed Euridice: Che farò senza Euridice?",
+      "assignment": "Aria Che farò senza Euridice? only; linked source may contain Act III",
+      "preferred_recording": "Bernarda Fink; Freiburger Barockorchester; RIAS Kammerchor; René Jacobs",
+      "source_refs": "S06#YouTube Builder!A2:T2;S09#PAGE 5",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L001-D001",
+          "url": "https://www.youtube.com/watch?v=kSBl3gFMa0M",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "René Jacobs 2001 production; video contains Act III rather than a single-track aria."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L002",
+      "kind": "listening",
+      "title": "Symphony No. 45 in F-Sharp Minor, Hob. I:45 “Farewell”: IV. Finale. Presto - Adagio",
+      "assignment": "Finale only",
+      "preferred_recording": "Concentus Musicus Wien; Nikolaus Harnoncourt",
+      "source_refs": "S06#YouTube Builder!A3:T3;S09#PAGE 6",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L002-D001",
+          "url": "https://www.youtube.com/watch?v=QfWkQRQAVsk",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Harnoncourt/Concentus Musicus Wien, Farewell finale; Topic upload matches the 1989/90 Teldec recording."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L003",
+      "kind": "listening",
+      "title": "Symphony No. 25 in G Minor, K. 183: I. Allegro con brio",
+      "assignment": "First movement only",
+      "preferred_recording": "Academy of St Martin in the Fields; Sir Neville Marriner",
+      "source_refs": "S06#YouTube Builder!A4:T4;S09#PAGE 7",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L003-D001",
+          "url": "https://www.youtube.com/watch?v=HMtm_P7Z3iM",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Academy of St Martin in the Fields / Neville Marriner; the performance associated with Amadeus."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L004",
+      "kind": "listening",
+      "title": "Le nozze di Figaro, K. 492: Non più andrai",
+      "assignment": "Aria Non più andrai only",
+      "preferred_recording": "Bryn Terfel; English Baroque Soloists; Monteverdi Choir; John Eliot Gardiner",
+      "source_refs": "S06#YouTube Builder!A5:T5;S09#PAGE 8",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L004-D001",
+          "url": "https://www.youtube.com/watch?v=yz8n2tVyGwc",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Bryn Terfel singing Non più andrai live in 1989. Chosen over an anonymous upload because the singer matters more pedagogically than the exact studio issue."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L005",
+      "kind": "listening",
+      "title": "Don Giovanni, K. 527, Act II: Don Giovanni, a cenar teco m'invitasti",
+      "assignment": "Commendatore scene only; source is full opera",
+      "preferred_recording": "Eberhard Wächter; Gottlob Frick; Philharmonia Orchestra; Carlo Maria Giulini",
+      "source_refs": "S06#YouTube Builder!A6:T6;S09#PAGE 9",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L005-D001",
+          "url": "https://www.youtube.com/watch?v=PxnSLALpHb4",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Giulini with the landmark Wächter/Schwarzkopf/Sutherland/Taddei cast; full opera, use the Commendatore scene."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L006",
+      "kind": "listening",
+      "title": "Requiem in D Minor, K. 626: Lacrimosa",
+      "assignment": "Lacrimosa only",
+      "preferred_recording": "Academy of St Martin in the Fields; Academy Chorus; Sir Neville Marriner",
+      "source_refs": "S06#YouTube Builder!A7:T7;S09#PAGE 10",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L006-D001",
+          "url": "https://www.youtube.com/watch?v=tFFfT_uSF2w",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Marriner/Academy performance of the Lacrimosa from the Amadeus sound world."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L007",
+      "kind": "listening",
+      "title": "Ein feste Burg ist unser Gott",
+      "assignment": "",
+      "preferred_recording": "Dresdner Kreuzchor; Capella Fidicinia; Hans Grüß",
+      "source_refs": "S06#YouTube Builder!A8:T8",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L007-D001",
+          "url": "https://www.youtube.com/watch?v=7M65EAkJgr8",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Dresdner Kreuzchor + Capella Fidicinia Leipzig + Hans Grüß; official artist-channel upload."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L008",
+      "kind": "listening",
+      "title": "Praeludium in G Minor, BuxWV 149",
+      "assignment": "",
+      "preferred_recording": "Ton Koopman, organ",
+      "source_refs": "S06#YouTube Builder!A9:T9",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L008-D001",
+          "url": "https://www.youtube.com/watch?v=7_liS3WlN9w",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Ton Koopman playing BuxWV 149 on historic-style organ; exact performer and work."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L009",
+      "kind": "listening",
+      "title": "Wachet auf, ruft uns die Stimme, BWV 140: I. Wachet auf",
+      "assignment": "",
+      "preferred_recording": "Tölzer Knabenchor; Concentus Musicus Wien; Nikolaus Harnoncourt",
+      "source_refs": "S06#YouTube Builder!A10:T10",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L009-D001",
+          "url": "https://www.youtube.com/watch?v=DqZE54i-muE",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Netherlands Bach Society substitute. Not Harnoncourt, but an authoritative, clearly filmed performance of BWV 140 and better for visual study."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L010",
+      "kind": "listening",
+      "title": "Brandenburg Concerto No. 5 in D Major, BWV 1050: I. Allegro",
+      "assignment": "",
+      "preferred_recording": "Concentus Musicus Wien; Nikolaus Harnoncourt",
+      "source_refs": "S06#YouTube Builder!A11:T11",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L010-D001",
+          "url": "https://www.youtube.com/watch?v=BqkSVk3Gm7k",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Harnoncourt/Concentus Musicus Wien, 1981; full Brandenburg No. 5. Listen to the opening movement."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L011",
+      "kind": "listening",
+      "title": "Matthäus-Passion, BWV 244: Erbarme dich",
+      "assignment": "",
+      "preferred_recording": "Bernarda Fink; Concentus Musicus Wien; Nikolaus Harnoncourt",
+      "source_refs": "S06#YouTube Builder!A12:T12",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L011-D001",
+          "url": "https://www.youtube.com/watch?v=sY56Y6IWMzg",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Harnoncourt/Concentus Musicus Wien full St Matthew Passion. Use Erbarme dich within the complete performance."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L012",
+      "kind": "listening",
+      "title": "The Art of Fugue, BWV 1080: Contrapunctus I",
+      "assignment": "",
+      "preferred_recording": "Gustav Leonhardt, harpsichord",
+      "source_refs": "S06#YouTube Builder!A13:T13",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L012-D001",
+          "url": "https://www.youtube.com/watch?v=E13pPCVLfK4",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Gustav Leonhardt, 1953; unusually valuable because Leonhardt later portrays Bach in Chronicle."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L013",
+      "kind": "listening",
+      "title": "Winterreise, D. 911: XXIV. Der Leiermann",
+      "assignment": "",
+      "preferred_recording": "Dietrich Fischer-Dieskau; Gerald Moore",
+      "source_refs": "S06#YouTube Builder!A14:T14",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L013-D001",
+          "url": "https://www.youtube.com/watch?v=sIIS-UgixGE",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Dietrich Fischer-Dieskau singing Der Leiermann; alternate accompanist Alfred Brendel rather than Gerald Moore."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L014",
+      "kind": "listening",
+      "title": "Tristan und Isolde: Prelude & Liebestod",
+      "assignment": "",
+      "preferred_recording": "Berliner Philharmoniker; Herbert von Karajan",
+      "source_refs": "S06#YouTube Builder!A15:T15",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L014-D001",
+          "url": "https://www.youtube.com/watch?v=4n042id3FIM",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Karajan with Jessye Norman. Alternate performance that preserves Karajan and makes the vocal Liebestod dramatically explicit."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L015",
+      "kind": "listening",
+      "title": "Lieder eines fahrenden Gesellen: Ging heut' Morgen über's Feld",
+      "assignment": "",
+      "preferred_recording": "Dame Janet Baker; Hallé Orchestra; Sir John Barbirolli",
+      "source_refs": "S06#YouTube Builder!A16:T16",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L015-D001",
+          "url": "https://www.youtube.com/watch?v=CMZmuV5vrlU",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Janet Baker / Hallé / Barbirolli famous recording; video contains the complete cycle."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L016",
+      "kind": "listening",
+      "title": "Symphony No. 1 in D Major: I. Langsam - Schleppend",
+      "assignment": "",
+      "preferred_recording": "Columbia Symphony Orchestra; Bruno Walter",
+      "source_refs": "S06#YouTube Builder!A17:T17",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L016-D001",
+          "url": "https://www.youtube.com/watch?v=yN-kZq7fCUQ",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Bruno Walter / Columbia Symphony Orchestra, 1961, first movement isolated."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L017",
+      "kind": "listening",
+      "title": "Rückert-Lieder: Ich bin der Welt abhanden gekommen",
+      "assignment": "",
+      "preferred_recording": "Dame Janet Baker; New Philharmonia Orchestra; Sir John Barbirolli",
+      "source_refs": "S06#YouTube Builder!A18:T18",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L017-D001",
+          "url": "https://www.youtube.com/watch?v=20YsQ2-B7sM",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Janet Baker / Barbirolli, Ich bin der Welt abhanden gekommen."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L018",
+      "kind": "listening",
+      "title": "Verklärte Nacht, Op. 4",
+      "assignment": "",
+      "preferred_recording": "Berliner Philharmoniker; Herbert von Karajan",
+      "source_refs": "S06#YouTube Builder!A19:T19",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L018-D001",
+          "url": "https://www.youtube.com/watch?v=nzYyJsN70e0",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Karajan / Berliner Philharmoniker, Verklärte Nacht, 1973."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L019",
+      "kind": "listening",
+      "title": "Die Moritat von Mackie Messer",
+      "assignment": "",
+      "preferred_recording": "Bertolt Brecht; Lewis Ruth Band / Theo Mackeben Jazzband; Theo Mackeben",
+      "source_refs": "S06#YouTube Builder!A20:T20",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L019-D001",
+          "url": "https://www.youtube.com/watch?v=_QXJ3OXWaOY",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Bertolt Brecht's own 1929 recording of Mackie Messer."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L020",
+      "kind": "listening",
+      "title": "Wenn die beste Freundin",
+      "assignment": "",
+      "preferred_recording": "Marlene Dietrich; Margo Lion; Oskar Karlweis; Mischa Spoliansky, piano",
+      "source_refs": "S06#YouTube Builder!A21:T21",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L020-D001",
+          "url": "https://www.youtube.com/watch?v=UaGXFPUf_tU",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Marlene Dietrich, Margo Lion and Oskar Karlweis, 1928."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L021",
+      "kind": "listening",
+      "title": "Raus mit den Männern aus dem Reichstag",
+      "assignment": "",
+      "preferred_recording": "Claire Waldoff",
+      "source_refs": "S06#YouTube Builder!A22:T22",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L021-D001",
+          "url": "https://www.youtube.com/watch?v=ma9_rPNIykE",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Claire Waldoff historic recording."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L022",
+      "kind": "listening",
+      "title": "Veronika, der Lenz ist da",
+      "assignment": "",
+      "preferred_recording": "Comedian Harmonists",
+      "source_refs": "S06#YouTube Builder!A23:T23",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L022-D001",
+          "url": "https://www.youtube.com/watch?v=EdnF71b3nu4",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Comedian Harmonists historic recording."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L023",
+      "kind": "listening",
+      "title": "Ich bin von Kopf bis Fuß auf Liebe eingestellt",
+      "assignment": "",
+      "preferred_recording": "Marlene Dietrich; Friedrich Hollaender und seine Jazz-Symphoniker",
+      "source_refs": "S06#YouTube Builder!A24:T24",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L023-D001",
+          "url": "https://www.youtube.com/watch?v=ahyLLX0tmD8",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Marlene Dietrich's 1930 Blue Angel song."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L024",
+      "kind": "listening",
+      "title": "Surabaya Johnny",
+      "assignment": "",
+      "preferred_recording": "Lotte Lenya; Theo Mackeben; Orchestrola",
+      "source_refs": "S06#YouTube Builder!A25:T25",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L024-D001",
+          "url": "https://www.youtube.com/watch?v=aSLTvKC-P3Y",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Lotte Lenya historic Surabaya Johnny."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L025",
+      "kind": "listening",
+      "title": "Willkommen",
+      "assignment": "",
+      "preferred_recording": "Joel Grey; 1972 film cast",
+      "source_refs": "S06#YouTube Builder!A26:T26",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L025-D001",
+          "url": "https://www.youtube.com/watch?v=hBlB8RAJEEc",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "1972 film performance of Willkommen."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L026",
+      "kind": "listening",
+      "title": "Mein Herr",
+      "assignment": "",
+      "preferred_recording": "Liza Minnelli; 1972 film cast",
+      "source_refs": "S06#YouTube Builder!A27:T27",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L026-D001",
+          "url": "https://www.youtube.com/watch?v=DgjOedirhcQ",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "1972 film performance of Mein Herr."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L027",
+      "kind": "listening",
+      "title": "Maybe This Time",
+      "assignment": "",
+      "preferred_recording": "Liza Minnelli",
+      "source_refs": "S06#YouTube Builder!A28:T28",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L027-D001",
+          "url": "https://www.youtube.com/watch?v=hu2CZhvaqik",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Liza Minnelli performs Maybe This Time on Dick Cavett in 1972; period-live supplement rather than soundtrack master."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L028",
+      "kind": "listening",
+      "title": "Money, Money",
+      "assignment": "",
+      "preferred_recording": "Liza Minnelli; Joel Grey",
+      "source_refs": "S06#YouTube Builder!A29:T29",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L028-D001",
+          "url": "https://www.youtube.com/watch?v=eBtn2NQ5k58",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "1972 film performance of Money."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L029",
+      "kind": "listening",
+      "title": "Tomorrow Belongs to Me",
+      "assignment": "",
+      "preferred_recording": "1972 film soundtrack ensemble",
+      "source_refs": "S06#YouTube Builder!A30:T30",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L029-D001",
+          "url": "https://www.youtube.com/watch?v=_tUctFu46_c",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "1972 film scene of Tomorrow Belongs to Me."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L030",
+      "kind": "listening",
+      "title": "Cabaret",
+      "assignment": "",
+      "preferred_recording": "Liza Minnelli",
+      "source_refs": "S06#YouTube Builder!A31:T31",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L030-D001",
+          "url": "https://www.youtube.com/watch?v=xKiLdy6Fyo8",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "1972 film performance of Cabaret."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L031",
+      "kind": "listening",
+      "title": "Landler in C",
+      "assignment": "",
+      "preferred_recording": "Die Landlerpartie Derschmidt",
+      "source_refs": "S06#YouTube Builder!A32:T32",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L031-D001",
+          "url": "https://www.youtube.com/watch?v=f7H4Ri9_JqY",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Visual demonstration by an Austrian folk-dance group. Deliberately chosen over an inaccessible specific archival recording because the course should show the Ländler as social dance."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L032",
+      "kind": "listening",
+      "title": "Geschichten aus dem Wienerwald, Op. 325",
+      "assignment": "",
+      "preferred_recording": "Wiener Philharmoniker; Willi Boskovsky; Anton Karas, zither",
+      "source_refs": "S06#YouTube Builder!A33:T33",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L032-D001",
+          "url": "https://www.youtube.com/watch?v=VVjxfFft6AU",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Correct Strauss waltz with visible orchestral performance. The Boskovsky/Karas recording remains the preferred audio reference but is not reliably available as a stable YouTube video."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L033",
+      "kind": "listening",
+      "title": "Es wollt ein Jägerlein jagen",
+      "assignment": "",
+      "preferred_recording": "Trapp Family Singers; Franz Wasner",
+      "source_refs": "S06#YouTube Builder!A34:T34",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L033-D001",
+          "url": "https://www.youtube.com/watch?v=LBHbtIkF_9M",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Trapp Family Singers / Franz Wasner, 1953; official Topic upload."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L034",
+      "kind": "listening",
+      "title": "The Sound of Music",
+      "assignment": "",
+      "preferred_recording": "Julie Andrews; 1965 film soundtrack",
+      "source_refs": "S06#YouTube Builder!A35:T35",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L034-D001",
+          "url": "https://www.youtube.com/watch?v=6f0T6UV-HiI",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Official Rodgers & Hammerstein film clip."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L035",
+      "kind": "listening",
+      "title": "Edelweiss",
+      "assignment": "",
+      "preferred_recording": "Julie Andrews; Bill Lee; 1965 film soundtrack",
+      "source_refs": "S06#YouTube Builder!A36:T36",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L035-D001",
+          "url": "https://www.youtube.com/watch?v=8bL2BCiFkTk",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Official Rodgers & Hammerstein film clip."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L036",
+      "kind": "listening",
+      "title": "Climb Ev'ry Mountain",
+      "assignment": "",
+      "preferred_recording": "Margery McKay; 1965 film soundtrack",
+      "source_refs": "S06#YouTube Builder!A37:T37",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L036-D001",
+          "url": "https://www.youtube.com/watch?v=RKuqySkqhHw",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Film performance of Climb Ev'ry Mountain."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L037",
+      "kind": "listening",
+      "title": "Wien, du Stadt meiner Träume",
+      "assignment": "",
+      "preferred_recording": "Richard Tauber",
+      "source_refs": "S06#YouTube Builder!A38:T38",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L037-D001",
+          "url": "https://www.youtube.com/watch?v=fS8bZZsGa2Q",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Richard Tauber, 1928."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L038",
+      "kind": "listening",
+      "title": "Wien bleibt Wien",
+      "assignment": "",
+      "preferred_recording": "Classical Vienna Schrammel Quartet",
+      "source_refs": "S06#YouTube Builder!A39:T39",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L038-D001",
+          "url": "https://www.youtube.com/watch?v=WuTD9UyLK2k",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Correct Schrammel work; alternate ensemble. Retained because the vernacular style is the important connection."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L039",
+      "kind": "listening",
+      "title": "The Third Man Theme",
+      "assignment": "",
+      "preferred_recording": "Anton Karas, zither",
+      "source_refs": "S06#YouTube Builder!A40:T40",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L039-D001",
+          "url": "https://www.youtube.com/watch?v=2oEsWi88Qv0",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Anton Karas, The Third Man Theme."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L040",
+      "kind": "listening",
+      "title": "Café Mozart Waltz",
+      "assignment": "",
+      "preferred_recording": "Anton Karas, zither",
+      "source_refs": "S06#YouTube Builder!A41:T41",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L040-D001",
+          "url": "https://www.youtube.com/watch?v=RKWamBOsQRs",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Anton Karas, Café Mozart Waltz."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L041",
+      "kind": "listening",
+      "title": "A Survivor from Warsaw, Op. 46",
+      "assignment": "",
+      "preferred_recording": "Gottfried Hornik; Wiener Philharmoniker; Vienna State Opera Chorus; Claudio Abbado",
+      "source_refs": "S06#YouTube Builder!A42:T42",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L041-D001",
+          "url": "https://www.youtube.com/watch?v=rGWai0SEpUQ",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Hermann Prey performance substituted for the Abbado/Hornik recording because a stable direct YouTube implementation was available. The master manifest retains Abbado as the preferred audio recording."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L042",
+      "kind": "listening",
+      "title": "Die Reblaus",
+      "assignment": "",
+      "preferred_recording": "Hans Moser; Wiener Schrammelorchester; Bruno Seidler-Winkler",
+      "source_refs": "S06#YouTube Builder!A43:T43",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L042-D001",
+          "url": "https://www.youtube.com/watch?v=PQaq0eusLFY",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Hans Moser, Die Reblaus."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L043",
+      "kind": "listening",
+      "title": "Heroes",
+      "assignment": "",
+      "preferred_recording": "David Bowie",
+      "source_refs": "S06#YouTube Builder!A44:T44",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L043-D001",
+          "url": "https://www.youtube.com/watch?v=lXgkuM2NhYI",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Official David Bowie video."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L044",
+      "kind": "listening",
+      "title": "Nightclubbing",
+      "assignment": "",
+      "preferred_recording": "Iggy Pop",
+      "source_refs": "S06#YouTube Builder!A45:T45",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L044-D001",
+          "url": "https://www.youtube.com/watch?v=G3OaMZojJRg",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Iggy Pop, Nightclubbing from The Idiot era."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L045",
+      "kind": "listening",
+      "title": "Der Mussolini",
+      "assignment": "",
+      "preferred_recording": "DAF; produced by Conny Plank",
+      "source_refs": "S06#YouTube Builder!A46:T46",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L045-D001",
+          "url": "https://www.youtube.com/watch?v=iFyRsLbrFfA",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "DAF, Der Mussolini."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L046",
+      "kind": "listening",
+      "title": "Yü-Gung",
+      "assignment": "",
+      "preferred_recording": "Einstürzende Neubauten",
+      "source_refs": "S06#YouTube Builder!A47:T47",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L046-D001",
+          "url": "https://www.youtube.com/watch?v=pFDoTnylJO8",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Einstürzende Neubauten, Yü-Gung."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L047",
+      "kind": "listening",
+      "title": "Six Bells Chime",
+      "assignment": "",
+      "preferred_recording": "Crime & the City Solution",
+      "source_refs": "S06#YouTube Builder!A48:T48",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L047-D001",
+          "url": "https://www.youtube.com/watch?v=zrMRks07XyY",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Crime & the City Solution, Six Bells Chime."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L048",
+      "kind": "listening",
+      "title": "From Her to Eternity",
+      "assignment": "",
+      "preferred_recording": "Nick Cave & the Bad Seeds",
+      "source_refs": "S06#YouTube Builder!A49:T49",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L048-D001",
+          "url": "https://www.youtube.com/watch?v=ZPf6SWcENWo",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Nick Cave and the Bad Seeds performance as seen in Wings of Desire."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L049",
+      "kind": "listening",
+      "title": "Piano Sonata in A Major, D. 959: II. Andantino",
+      "assignment": "",
+      "preferred_recording": "Mitsuko Uchida",
+      "source_refs": "S06#YouTube Builder!A50:T50",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L049-D001",
+          "url": "https://www.youtube.com/watch?v=PNu9OxXprq0",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Mitsuko Uchida, Schubert D.959 Andantino; exact preferred pianist/performance."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L050",
+      "kind": "listening",
+      "title": "Winterreise, D. 911: XV. Die Krähe",
+      "assignment": "",
+      "preferred_recording": "Dietrich Fischer-Dieskau; Gerald Moore",
+      "source_refs": "S06#YouTube Builder!A51:T51",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L050-D001",
+          "url": "https://www.youtube.com/watch?v=CtDGuMry20M",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Dietrich Fischer-Dieskau, Die Krähe; same singer, recording/accompaniment not treated as exact."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L051",
+      "kind": "listening",
+      "title": "Piano Trio No. 2 in E-Flat Major, D. 929: II. Andante con moto",
+      "assignment": "",
+      "preferred_recording": "Beaux Arts Trio",
+      "source_refs": "S06#YouTube Builder!A52:T52",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L051-D001",
+          "url": "https://www.youtube.com/watch?v=wFd9ypEhv2w",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Beaux Arts Trio 1966; full D.929 video. The Andante con moto begins around 12:44."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L052",
+      "kind": "listening",
+      "title": "Fantaisie in F Minor, Op. 49",
+      "assignment": "",
+      "preferred_recording": "Arthur Rubinstein",
+      "source_refs": "S06#YouTube Builder!A53:T53",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L052-D001",
+          "url": "https://www.youtube.com/watch?v=HzukCj3PKHU",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Arthur Rubinstein 1962 Fantaisie; official Topic upload."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L053",
+      "kind": "listening",
+      "title": "Prelude in G Minor, Op. 23, No. 5",
+      "assignment": "",
+      "preferred_recording": "Sviatoslav Richter",
+      "source_refs": "S06#YouTube Builder!A54:T54",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L053-D001",
+          "url": "https://www.youtube.com/watch?v=swyDv7edaac",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Sviatoslav Richter official Topic upload from 1963. Same pianist and work; differs from the originally targeted 1959 issue."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L054",
+      "kind": "listening",
+      "title": "Variations for Piano, Op. 27",
+      "assignment": "",
+      "preferred_recording": "Maurizio Pollini",
+      "source_refs": "S06#YouTube Builder!A55:T55",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L054-D001",
+          "url": "https://www.youtube.com/watch?v=iJfF1THDnuY",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Maurizio Pollini complete Webern Op.27 live in 2002. Chosen over an official 1978 single-movement upload so the course keeps the complete work."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L055",
+      "kind": "listening",
+      "title": "The Well-Tempered Clavier, Book I: Prelude No. 1 in C Major, BWV 846",
+      "assignment": "",
+      "preferred_recording": "Glenn Gould",
+      "source_refs": "S06#YouTube Builder!A56:T56",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L055-D001",
+          "url": "https://www.youtube.com/watch?v=0egJr6nvCQI",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Glenn Gould playing the C-major Prelude; performer/work exact, issue provenance not essential here."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L056",
+      "kind": "listening",
+      "title": "Symphony No. 5 in C-Sharp Minor: IV. Adagietto",
+      "assignment": "",
+      "preferred_recording": "Berliner Philharmoniker; Claudio Abbado",
+      "source_refs": "S06#YouTube Builder!A57:T57",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L056-D001",
+          "url": "https://www.youtube.com/watch?v=D_JyDU1423Y",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Deutsche Grammophon official video: Abbado/Lucerne 2004 Adagietto excerpt. Same conductor, later performance than the 1993 preferred audio recording."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L057",
+      "kind": "listening",
+      "title": "Cello Concerto in E Minor, Op. 85: I. Adagio - Moderato",
+      "assignment": "",
+      "preferred_recording": "Sophie Kauer; London Symphony Orchestra; Natalie Murray Beale",
+      "source_refs": "S06#YouTube Builder!A58:T58",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L057-D001",
+          "url": "https://www.youtube.com/watch?v=h_ucdEDxt9Y",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Elgar concerto performance linked directly to TÁR."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L058",
+      "kind": "listening",
+      "title": "Partita for 8 Voices: III. Courante",
+      "assignment": "",
+      "preferred_recording": "Roomful of Teeth",
+      "source_refs": "S06#YouTube Builder!A59:T59",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L058-D001",
+          "url": "https://www.youtube.com/watch?v=NDVMtnaB28E",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Roomful of Teeth performing Caroline Shaw; later live performance, same ensemble."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L059",
+      "kind": "listening",
+      "title": "For Petra",
+      "assignment": "",
+      "preferred_recording": "Hildur Guðnadóttir",
+      "source_refs": "S06#YouTube Builder!A60:T60",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L059-D001",
+          "url": "https://www.youtube.com/watch?v=S88gn4EpCw8",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "For Petra vocal version from the TÁR sound world."
+        }
+      ]
+    },
+    {
+      "id": "MH-C001-L060",
+      "kind": "listening",
+      "title": "Symphony No. 6 in B Minor, Op. 74 “Pathétique”: II. Allegro con grazia",
+      "assignment": "",
+      "preferred_recording": "Leningrad Philharmonic Orchestra; Evgeny Mravinsky",
+      "source_refs": "S06#YouTube Builder!A61:T61",
+      "retired": false,
+      "destinations": [
+        {
+          "id": "MH-C001-L060-D001",
+          "url": "https://www.youtube.com/watch?v=czAVhmKmDS8",
+          "label": "Curated YouTube recording",
+          "relationship": "curated_recording",
+          "countries": [
+            "*"
+          ],
+          "excluded_countries": [],
+          "access": "unknown",
+          "availability": "unknown",
+          "priority": 10,
+          "last_verified_on": null,
+          "verified_country": null,
+          "notes": "Mravinsky/Leningrad Philharmonic reference performance; full symphony. The course target is movement II, Allegro con grazia."
+        }
+      ]
+    }
+  ]
+}

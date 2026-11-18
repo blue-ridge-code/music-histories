@@ -37,3 +37,5 @@ layer activation. `docs/MAINTENANCE.md` applies when feeding improvements back t
 the template; `docs/REVIEW.md` and `gauntlet/` apply when their workflows are used.
 Earlier template decisions supply operational history, not creative approval of
 Music Histories content. The root AGENTS.md retains the operational entry points.
+
+Media access: [stable-link registry and country-routing operations](../links/README.md).
