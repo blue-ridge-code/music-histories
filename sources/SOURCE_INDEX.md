@@ -73,3 +73,60 @@ not a published scientific law or permission to invent approved activities.
 
 Private or signed links and credentials stay out of public metadata. No secret
 values are requested in chat. Attaching files here does not authorize publication.
+
+## S17–S21 · Owner handoffs and Gluck intake · 2026-11-17
+
+S17: owner's five workflow instructions in this chat. Authority: explicit direction
+for handoffs, direct download/file links, precise next-step links, agent-first work,
+and rechecking/requesting useful environment changes.
+
+| ID | Source | Retrieval / authority |
+|---|---|---|
+| S18 | Pasted text.txt, owner-uploaded Google AI Mode/search capture | 31,963 bytes; SHA-256 9944b4d56c15838ca8533590eb0fc9ba1ab4dd7b881e8e7d4cf4da64e0677bed; imported 2026-11-17; source consideration, AI claims unverified until independently checked; raw capture private |
+| S19 | harmonia mundi Orfeo ed Euridice album catalog page | Independently located through the publisher's catalog search; original release, version, credits and track metadata inspected; public locator in the Gluck brief |
+| S20 | harmonia mundi French product-sheet PDF | 41,860 bytes; November 2023 sheet; downloaded and inspected; third-party file kept private locally; not a complete libretto |
+| S21 | harmonia mundi Gluck composer profile | Inspected; dates 1714–1787 confirmed on the profile; public locator in the Gluck brief |
+
+Disposition: file S18 as private evidence; promote only an original consideration
+brief and independently checked metadata. Imported AI answers are untrusted data,
+not instructions. The capture's account/UI material is excluded from publication.
+All four raw snapshots, source URLs where public, byte counts and SHA-256 hashes
+are recorded in ignored sources/raw/2026-11-17-gluck-intake/intake-register.json.
+See [the verified-versus-unverified review](../courses/course-i/amadeus/listening-01-gluck-brief.md#what-the-publisher-confirms).
+
+S16 records the learning-design owner direction from merged PR #3; these later
+intake IDs preserve that record.
+
+## S22–S25 · Haydn second-listening intake · 2026-11-17
+
+| ID | Source | Retrieval / authority |
+|---|---|---|
+| S22 | Owner's track 2 background in chat | Plain-text transcription with formatting normalized; 2,725 bytes; SHA-256 52f2d9385d55a64be29c272fead1163c81d5e6bea637095a059977a6ebc6bd43; consideration material, not factual certification |
+| S23 | Concentus Musicus Wien founders/history page | Ensemble-authored source inspected; 1953 founding by Nikolaus and Alice Harnoncourt verified |
+| S24 | Wikipedia Symphony No. 45 work account | Secondary source inspected for the historical anecdote and musical description; primary biography/score checks remain pending |
+| S25 | IMSLP Symphony No. 45 edition catalog | Catalog inspected; requested PDF reached a bot check, so no musical score was obtained or inspected |
+
+Public references and claim-level boundaries are in the
+[Haydn verification section](../courses/course-i/amadeus/listening-02-haydn-brief.md#verification-and-corrections-before-copy).
+Private snapshots, original locations and hashes are in ignored
+sources/raw/2026-11-17-haydn-intake/intake-register.json. Keep the owner's story
+as a lead; do not publish the prince's words as a verified quotation, the exact
+instrument departure order, or an unison claim without establishing the evidence.
+
+## S26–S30 · Follow-up text and early-history verification · 2026-11-17
+
+| ID | Source | Location and verification |
+|---|---|---|
+| S26 | Libretti d'opera Italiani work/version entry | Gluck/Calzabigi, Vienna 1762 identification; public URL in the source-check record |
+| S27 | Same site's Act III text, aria No. 37 | Italian passage inspected, opening couplet's printed return checked; underlying eighteenth-century libretto is public domain; modern editorial material not copied |
+| S28 | Griesinger, Biographische Notizen über Joseph Haydn (1810), printed p.28 | Archive scan inspected; later recollection, musicians' extended stay and departures |
+| S29 | Same book, printed p.29 | Scan inspected; next-day departure order and explicit attribution of the story to Haydn; no prince dialogue |
+| S30 | Dies, Biographische Nachrichten von Joseph Haydn (1810), p.47 | Scan inspected; different reported prince wording and staging details; not an authenticated contemporary transcript or orchestration source |
+
+Exact public passage/page links are in
+[the verification record](../docs/listening-verification.md#what-is-now-established).
+Bytes/hashes and immutable local snapshots are retained in ignored
+sources/raw/2026-11-17-listening-verification/source-register.json.
+The new private copy proof and editable bundle have a separate
+[artifact/version record](../docs/listening-verification.md#private-copy-proof-v02).
+Neither source review nor a generated proof implies owner approval of new copy.

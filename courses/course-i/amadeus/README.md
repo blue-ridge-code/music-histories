@@ -1,5 +1,12 @@
 # Course I · Chapter 1 · Amadeus
 
+First-listening intake: [Gluck material worth developing](listening-01-gluck-brief.md#what-to-keep-from-the-capture)
+and [the agent's next verification step](listening-01-gluck-brief.md#next-agent-step-verify-text-and-excerpt).
+This is consideration material, not approved manuscript copy or a change to the aria assignment.
+
+Second-listening intake: [Haydn background worth developing](listening-02-haydn-brief.md#what-to-keep-from-the-background)
+and [claims to check before copy](listening-02-haydn-brief.md#verification-and-corrections-before-copy).
+
 > 2026-11-16: the manuscript and prototype PDFs have now been recovered.
 > See [source recovery](../../../docs/source-recovery.md). The registry calls for
 > composition-first reprototyping; v0.2 is not approved visual direction. Original

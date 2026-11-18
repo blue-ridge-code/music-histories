@@ -4,6 +4,13 @@ Learner experience: [Course I learning design and research](learning-design.md).
 Authoring proposals: [twenty-week journey](../courses/course-i/learning-journey.md)
 and [Amadeus visit design](../courses/course-i/amadeus/visit-design.md).
 
+Owner navigation: [next action](owner-next-steps.md#next-action) and
+[handoff instructions](agents/owner-handoffs.md#handoff-format).
+First-track consideration: [Gluck listening layers](../courses/course-i/amadeus/listening-01-gluck-brief.md#what-to-keep-from-the-capture).
+Second-track consideration: [Haydn listening/context layers](../courses/course-i/amadeus/listening-02-haydn-brief.md#what-to-keep-from-the-background).
+Current copy-review gate: [review the two draft notes](owner-next-steps.md#review-draft-listening-notes).
+Evidence: [completed source checks](listening-verification.md#what-is-now-established).
+
 Reuse: [licenses](../LICENSE.md), [attribution](../ATTRIBUTION.md),
 [contributors](../CONTRIBUTORS.md), and [contribution guide](../CONTRIBUTING.md).
 

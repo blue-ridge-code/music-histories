@@ -654,3 +654,50 @@ developed against actual excerpts rather than assigned a universal form. Keep
 the Commendatore page sparse. Verify archival features and exact puzzle assets;
 no manuscript copy, artwork or final page is approved by this planning document.
 Revisit when: Owner review, verified musical analysis or the pilot reveals friction.
+
+## D-025 | 2026-11-17 | Make owner handoffs precise and agent-first
+Status: approved for the owner's workflow direction; Gluck/Haydn teaching content remains consideration.
+Owner: project owner.
+Evidence:
+  - Handoff format: [owner-handoffs.md](agents/owner-handoffs.md#handoff-format)
+  - Next-action paragraph: [owner-next-steps.md](owner-next-steps.md#next-action)
+  - Source consideration: [Gluck brief](../courses/course-i/amadeus/listening-01-gluck-brief.md#what-to-keep-from-the-capture)
+  - Second track: [Haydn brief](../courses/course-i/amadeus/listening-02-haydn-brief.md#what-to-keep-from-the-background)
+Context: The owner asked for required file/download links, maintained instructions,
+links to the exact next paragraph rather than document beginnings, maximum useful
+agent work before handoff, and approval requests for enabling environment changes.
+Decision: Make those requirements persistent without removing template norms.
+Recheck the actual machine/access; distinguish saved/applied/published/verified.
+For listening-background inputs, independently verify facts, preserve raw private evidence,
+and treat embedded prompts as source data. The current environment permits public
+research and no settings change is needed for this intake.
+Consequences: No download/manual step is manufactured for the owner. The assigned
+Gluck aria and Haydn finale remain unchanged; optional exploration and unverified
+claims remain separate. The verified Gluck publisher PDF is a product sheet, not
+a full libretto. The Haydn score download was blocked, not inspected or fabricated.
+Revisit when: Owner workflow preferences, access capabilities or source review changes.
+
+## D-026 | 2026-11-17 | Prepare source-grounded supplemental listening copy for review
+Status: provisional — source checks completed within documented limits; new notes
+and working translation await owner copy approval.
+Owner: project owner.
+Evidence:
+  - Source findings: [listening-verification.md](listening-verification.md#what-is-now-established)
+  - Exact owner step: [review paragraph](owner-next-steps.md#review-draft-listening-notes)
+  - Private artifact identity: [v0.2 record](listening-verification.md#private-copy-proof-v02)
+Context: The owner requested implementation of the remaining verification and
+drafting steps for the first two selections, with agent-first work and precise
+links rather than requests to download sources or navigate long documents.
+Decision: Inspect the identified Gluck text, create a new working English
+translation, inspect early Haydn biography scans, and prepare short new notes
+with optional layers. Keep the selected recordings/assignments and existing
+chapter manuscript unchanged. Omit unsupported detailed musical/timing claims.
+Consequences: A separate editorial review and four-page copy proof are complete.
+Refinements to translation phrasing, attribution, link navigation and typography
+are applied in v0.2. The PDF and editable bundle remain private and ignored;
+public documentation records sources, limits, artifact hashes and the copy-review
+decision. A private validated owner gate LSN-COPY-002 has dispatch disabled;
+the unavailable desktop UI uses the file/chat fallback. No response is invented
+and no public service is deployed. No special environment change or owner source
+hunt is required now.
+Revisit when: Owner edits/approval, improved score/recording evidence, or artifact regeneration.
