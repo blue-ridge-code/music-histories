@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Usage: bash scripts/sync-skills.sh [--verify]
 # Mirrors canonical .agents/skills/ -> .claude/skills/ additively (never deletes extras).
+# Generated Python bytecode is local state, not skill content.
 # --verify compares SHA-256 of each canonical file against its mirror; exit 1 on drift/missing, 0 when clean.
 
 set -euo pipefail
@@ -27,6 +28,10 @@ if [ ! -d "$SOURCE" ]; then
     exit 1
 fi
 
+canonical_files() {
+    find "$SOURCE" -type d -name __pycache__ -prune -o -type f ! -name '*.pyc' -print0
+}
+
 if [ "${1:-}" = "--verify" ]; then
     problems=0
     while IFS= read -r -d '' file; do
@@ -41,7 +46,7 @@ if [ "${1:-}" = "--verify" ]; then
             echo "DRIFT:   $relative"
             problems=$((problems + 1))
         fi
-    done < <(find "$SOURCE" -type f -print0)
+    done < <(canonical_files)
     if [ "$problems" -gt 0 ]; then
         echo "Skill mirror drift detected: $problems problem(s)."
         exit 1
@@ -63,7 +68,7 @@ while IFS= read -r -d '' file; do
     mkdir -p "$(dirname "$destination")"
     cp "$file" "$destination"
     copied=$((copied + 1))
-done < <(find "$SOURCE" -type f -print0)
+done < <(canonical_files)
 
 echo "Skill sync complete: $copied copied, $skipped unchanged (skipped). Extras in .claude/skills left untouched."
 exit 0

@@ -1,5 +1,6 @@
 # Usage: pwsh scripts/sync-skills.ps1 [-Verify]
 # Mirrors canonical .agents/skills/ -> .claude/skills/ additively (never deletes extras).
+# Generated Python bytecode is local state, not skill content.
 # -Verify compares SHA-256 of each canonical file against its mirror; exit 1 on drift/missing, 0 when clean.
 
 [CmdletBinding()]
@@ -25,7 +26,11 @@ function Get-FileSha256 {
     (Get-FileHash -LiteralPath $Path -Algorithm SHA256).Hash.ToUpperInvariant()
 }
 
-$canonicalFiles = @(Get-ChildItem -LiteralPath $Source -Recurse -File)
+$canonicalFiles = @(Get-ChildItem -LiteralPath $Source -Recurse -File |
+    Where-Object {
+        $relativePath = $_.FullName.Substring($Source.Length + 1)
+        $relativePath -cnotmatch '(^|[\\/])__pycache__[\\/]' -and $_.Extension -cne '.pyc'
+    })
 
 if ($Verify) {
     $problems = @()
